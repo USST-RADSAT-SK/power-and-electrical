@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name RADSAT-SK_Timer)(type Legacy)(uri ${KIPRJMOD}/RADSAT-SK_Timer.lib)(options "")(descr ""))
+  (lib (name RADSAT-SK-Timer-rescue)(type Legacy)(uri "${KIPRJMOD}/RADSAT-SK Timer-rescue.lib")(options "")(descr ""))
+)
