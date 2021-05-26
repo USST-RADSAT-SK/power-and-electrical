@@ -38,15 +38,25 @@
 ## How to Commit a Change
 
   Once gitbash is opened you want to make sure you are in the right file directory you want to use the command 
+  
   "git status"
+  
   to check if you saved your files (it will show up as red)
+  
   "Git add [filename]"
+  
   this will prepare your file to be commited
+  
   "git status"
+  
   the file name should be green now
-  "git commit -m "[changes you made]" "
+  
+  "git commit -m "[changes you made as a comment]" "
+  
   this will commit your changes 
+  
   "git push"
+  
   this will save your changes into the branch
 
 
