@@ -1,13 +1,13 @@
 # power-and-electrical
 
 
-# How to Download GitBash
+## How to Download GitBash
 
 
-# How To Make a Branch
+## How To Make a Branch
 
 
-# How to Commit a Change
+## How to Commit a Change
 
 
 
