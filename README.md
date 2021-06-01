@@ -24,7 +24,24 @@
 
   Now if you want to make changes to a file please make a branch 
   
+## How To View a Branch
 
+  Say you want to do a quick check on the progress for the PCB board
+  
+  use the following commands in git bash
+  
+  "git checkout [name of branch]"
+  
+  In the case that KiCad is not updating automatically use the following procedure:
+  
+  - open project file with "open with..." in file directory 
+
+  If you quickly want to check when the last changes were done to a branch use
+  
+  "git log"
+  
+  scroll up & you will see the most recent commit and who did it
+  
 ## How To Make a Branch
   
   a branch is like a copy of files that you can edit on your local drive where you dont have to worry about messing up the main code
