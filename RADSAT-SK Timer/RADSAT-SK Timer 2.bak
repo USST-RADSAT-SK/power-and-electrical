@@ -17,23 +17,23 @@ $EndDescr
 $Comp
 L Device:Battery_Cell BT202
 U 1 1 600CC811
-P 5150 3700
-F 0 "BT202" H 5268 3796 50  0000 L CNN
-F 1 "Battery_Cell" H 5268 3705 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 5150 3760 50  0001 C CNN
-F 3 "~" V 5150 3760 50  0001 C CNN
-	1    5150 3700
+P 5175 3125
+F 0 "BT202" H 5293 3221 50  0000 L CNN
+F 1 "Battery_Cell" H 5293 3130 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 5175 3185 50  0001 C CNN
+F 3 "~" V 5175 3185 50  0001 C CNN
+	1    5175 3125
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Battery_Cell BT201
 U 1 1 600C995D
-P 4425 3700
-F 0 "BT201" H 4543 3796 50  0000 L CNN
-F 1 "Battery_Cell" H 4543 3705 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 4425 3760 50  0001 C CNN
-F 3 "~" V 4425 3760 50  0001 C CNN
-	1    4425 3700
+P 4450 3125
+F 0 "BT201" H 4568 3221 50  0000 L CNN
+F 1 "Battery_Cell" H 4568 3130 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 4450 3185 50  0001 C CNN
+F 3 "~" V 4450 3185 50  0001 C CNN
+	1    4450 3125
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -61,12 +61,12 @@ $EndComp
 $Comp
 L Switch:SW_Push SW204
 U 1 1 6012B10E
-P 5050 3000
-F 0 "SW204" V 5004 3148 50  0000 L CNN
-F 1 "SW_Push" V 5095 3148 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 5050 3200 50  0001 C CNN
-F 3 "~" H 5050 3200 50  0001 C CNN
-	1    5050 3000
+P 5075 2425
+F 0 "SW204" V 5029 2573 50  0000 L CNN
+F 1 "SW_Push" V 5120 2573 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 5075 2625 50  0001 C CNN
+F 3 "~" H 5075 2625 50  0001 C CNN
+	1    5075 2425
 	0    1    1    0   
 $EndComp
 $Comp
@@ -227,8 +227,6 @@ $EndComp
 Connection ~ 6300 2025
 Wire Wire Line
 	6300 2025 6300 1850
-Wire Wire Line
-	6300 1850 7700 1850
 $Comp
 L RADSAT-SK-Timer-rescue:MBR1020VL-Diode D203
 U 1 1 60121A1E
@@ -351,14 +349,12 @@ F 3 "" H 10550 1425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4425 3500 4800 3500
+	4450 2925 4825 2925
 Wire Wire Line
 	4775 4550 4775 4700
+Connection ~ 4825 2925
 Wire Wire Line
-	4775 3800 4775 4150
-Connection ~ 4800 3500
-Wire Wire Line
-	4800 3500 5150 3500
+	4825 2925 5175 2925
 Text Notes 7400 7500 0    50   ~ 0
 RADSAT-SK Timer Schematic 2
 Text Notes 10450 7500 0    50   ~ 0
@@ -417,7 +413,7 @@ Wire Notes Line
 Text Notes 500  6475 0    50   ~ 0
 Antenna Connector
 Wire Notes Line
-	11225 5550 500  5550
+	11125 5000 400  5000
 Text Notes 700  700  0    50   ~ 0
 Battery Boost, and Inhibits
 $Comp
@@ -455,7 +451,7 @@ F 3 "" H 4550 7425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 3200 4800 3500
+	4825 2625 4825 2925
 Wire Wire Line
 	4550 6850 4875 6850
 Wire Wire Line
@@ -477,34 +473,34 @@ $EndComp
 $Comp
 L Switch:SW_Push SW202
 U 1 1 60B0F6CF
-P 5050 2400
-F 0 "SW202" V 5004 2548 50  0000 L CNN
-F 1 "SW_Push" V 5095 2548 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 5050 2600 50  0001 C CNN
-F 3 "~" H 5050 2600 50  0001 C CNN
-	1    5050 2400
+P 5075 1825
+F 0 "SW202" V 5029 1973 50  0000 L CNN
+F 1 "SW_Push" V 5120 1973 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 5075 2025 50  0001 C CNN
+F 3 "~" H 5075 2025 50  0001 C CNN
+	1    5075 1825
 	0    1    1    0   
 $EndComp
 $Comp
 L Switch:SW_Push SW203
 U 1 1 60B0F765
-P 4550 3000
-F 0 "SW203" V 4504 3148 50  0000 L CNN
-F 1 "SW_Push" V 4595 3148 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4550 3200 50  0001 C CNN
-F 3 "~" H 4550 3200 50  0001 C CNN
-	1    4550 3000
+P 4575 2425
+F 0 "SW203" V 4529 2573 50  0000 L CNN
+F 1 "SW_Push" V 4620 2573 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4575 2625 50  0001 C CNN
+F 3 "~" H 4575 2625 50  0001 C CNN
+	1    4575 2425
 	0    1    1    0   
 $EndComp
 $Comp
 L Switch:SW_Push SW201
 U 1 1 60B0F7F8
-P 4550 2400
-F 0 "SW201" V 4504 2548 50  0000 L CNN
-F 1 "SW_Push" V 4595 2548 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4550 2600 50  0001 C CNN
-F 3 "~" H 4550 2600 50  0001 C CNN
-	1    4550 2400
+P 4575 1825
+F 0 "SW201" V 4529 1973 50  0000 L CNN
+F 1 "SW_Push" V 4620 1973 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4575 2025 50  0001 C CNN
+F 3 "~" H 4575 2025 50  0001 C CNN
+	1    4575 1825
 	0    1    1    0   
 $EndComp
 $Comp
@@ -519,44 +515,64 @@ F 3 "~" H 4500 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5050 2800 4800 2800
+	5075 2225 4825 2225
 Wire Wire Line
-	4550 2600 4800 2600
+	4575 2025 4825 2025
 Wire Wire Line
-	4550 2200 4800 2200
+	4575 1625 4825 1625
 Wire Wire Line
-	4550 3200 4800 3200
+	4575 2625 4825 2625
 Wire Wire Line
-	4800 2600 4800 2800
-Connection ~ 4800 2600
+	4825 2025 4825 2225
+Connection ~ 4825 2025
 Wire Wire Line
-	4800 2600 5050 2600
-Connection ~ 4800 2800
+	4825 2025 5075 2025
+Connection ~ 4825 2225
 Wire Wire Line
-	4800 2800 4550 2800
-Wire Wire Line
-	4500 4150 4775 4150
+	4825 2225 4575 2225
 Wire Wire Line
 	4500 4550 4775 4550
 Connection ~ 4775 4550
 Wire Wire Line
 	4775 4550 5000 4550
 Wire Wire Line
-	4425 3800 4775 3800
-Connection ~ 4775 3800
+	4450 3225 4800 3225
+Connection ~ 4800 3225
 Wire Wire Line
-	4775 3800 5150 3800
-Connection ~ 4775 4150
+	4800 3225 5175 3225
+Connection ~ 4825 2625
 Wire Wire Line
-	4775 4150 5000 4150
-Connection ~ 4800 3200
+	4825 2625 5075 2625
 Wire Wire Line
-	4800 3200 5050 3200
+	4825 1625 4825 1450
 Wire Wire Line
-	4800 2200 4800 2025
+	4825 1450 6325 1450
+Connection ~ 4825 1625
 Wire Wire Line
-	4800 2025 6300 2025
-Connection ~ 4800 2200
+	4825 1625 5075 1625
 Wire Wire Line
-	4800 2200 5050 2200
+	4500 4150 4800 4150
+Wire Wire Line
+	6325 1450 6325 1850
+Wire Wire Line
+	6300 1850 6325 1850
+Connection ~ 6325 1850
+Wire Wire Line
+	6325 1850 7700 1850
+Wire Wire Line
+	4800 3225 4800 4150
+Connection ~ 4800 4150
+Wire Wire Line
+	4800 4150 5000 4150
+$Comp
+L Connector:USB_B_Micro J204
+U 1 1 60C6CBAB
+P 925 5600
+F 0 "J204" H 980 6067 50  0000 C CNN
+F 1 "USB_B_Micro" H 980 5976 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105133-0001" H 1075 5550 50  0001 C CNN
+F 3 "~" H 1075 5550 50  0001 C CNN
+	1    925  5600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
