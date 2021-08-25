@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:RADSAT-SK Timer-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -410,8 +409,6 @@ Text GLabel 1300 7200 0    50   Input ~ 0
 I2C_CLK
 Text Notes 500  6475 0    50   ~ 0
 Antenna Connector
-Wire Notes Line
-	11125 5000 400  5000
 Text Notes 700  700  0    50   ~ 0
 Battery Boost, Inhibit Switches and RBF 
 $Comp
@@ -429,8 +426,6 @@ Text GLabel 3325 6625 0    50   Input ~ 0
 BUS_EN
 Wire Wire Line
 	3325 7400 3325 7375
-Wire Notes Line
-	6425 6300 6425 7800
 Wire Notes Line
 	475  6300 6425 6300
 Text Notes 2975 6450 0    50   ~ 0
@@ -624,9 +619,11 @@ Wire Wire Line
 	5100 7375 5100 7225
 Connection ~ 4150 7375
 $Comp
-L Connector:USB_B_Micro J202
+L RADSAT-SK-Timer-rescue:USB_B_Micro-Connector J202
 U 1 1 60C6CBAB
 P 1325 5575
+AR Path="/60C6CBAB" Ref="J202"  Part="1" 
+AR Path="/602E25D3/60C6CBAB" Ref="J202"  Part="1" 
 F 0 "J202" H 1380 6042 50  0000 C CNN
 F 1 "USB_B_Micro" H 1380 5951 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105133-0001" H 1475 5525 50  0001 C CNN
@@ -711,4 +708,146 @@ Text Notes 500  5125 0    50   ~ 0
 USB Charging\n
 Wire Notes Line
 	2900 5000 2900 7800
+Wire Notes Line
+	400  5000 11125 5000
+Wire Notes Line
+	6425 5000 6425 7800
+$Comp
+L Device:R R?
+U 1 1 611EADEE
+P 3600 6050
+F 0 "R?" H 3670 6096 50  0000 L CNN
+F 1 "R" H 3670 6005 50  0000 L CNN
+F 2 "" V 3530 6050 50  0001 C CNN
+F 3 "~" H 3600 6050 50  0001 C CNN
+	1    3600 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:5KPxxA D?
+U 1 1 611ED310
+P 4000 6050
+F 0 "D?" V 3954 6130 50  0000 L CNN
+F 1 "5KPxxA" V 4045 6130 50  0000 L CNN
+F 2 "Diode_THT:D_P600_R-6_P20.00mm_Horizontal" H 4000 5850 50  0001 C CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/5kp65.pdf" H 3950 6050 50  0001 C CNN
+	1    4000 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 611EE061
+P 4500 5900
+F 0 "R?" V 4293 5900 50  0000 C CNN
+F 1 "R" V 4384 5900 50  0000 C CNN
+F 2 "" V 4430 5900 50  0001 C CNN
+F 3 "~" H 4500 5900 50  0001 C CNN
+	1    4500 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 611F24A8
+P 4975 5900
+F 0 "Q?" H 5179 5946 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5179 5855 50  0000 L CNN
+F 2 "" H 5175 6000 50  0001 C CNN
+F 3 "~" H 4975 5900 50  0001 C CNN
+	1    4975 5900
+	1    0    0    -1  
+$EndComp
+Text Notes 3025 5125 0    50   ~ 0
+DETECT LOGIC FOR RBF
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 611F46E7
+P 4225 5375
+F 0 "BT?" H 4343 5471 50  0000 L CNN
+F 1 "Battery_Cell" H 4343 5380 50  0000 L CNN
+F 2 "" V 4225 5435 50  0001 C CNN
+F 3 "~" V 4225 5435 50  0001 C CNN
+	1    4225 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J208
+U 1 1 612116BF
+P 3250 5700
+F 0 "J208" H 3358 6081 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 3358 5990 50  0000 C CNN
+F 2 "" H 3250 5700 50  0001 C CNN
+F 3 "~" H 3250 5700 50  0001 C CNN
+	1    3250 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5500 3600 5500
+Wire Wire Line
+	3600 5500 3600 5600
+Wire Wire Line
+	3450 5900 3600 5900
+Connection ~ 3600 5900
+Wire Wire Line
+	3450 5600 3600 5600
+Connection ~ 3600 5600
+Wire Wire Line
+	3600 5600 3600 5900
+Wire Wire Line
+	3450 5800 3900 5800
+Wire Wire Line
+	3450 5700 3900 5700
+Connection ~ 3900 5700
+Wire Wire Line
+	3900 5700 3900 5800
+Wire Wire Line
+	3600 5900 4000 5900
+Wire Wire Line
+	4000 5900 4350 5900
+Connection ~ 4000 5900
+Wire Wire Line
+	4650 5900 4775 5900
+Wire Wire Line
+	5075 5700 5075 5475
+Wire Wire Line
+	5075 5475 4225 5475
+Wire Wire Line
+	3900 5175 4225 5175
+Wire Wire Line
+	3900 5175 3900 5700
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 6126FDD8
+P 5300 5275
+F 0 "J?" H 5272 5157 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5272 5248 50  0000 R CNN
+F 2 "" H 5300 5275 50  0001 C CNN
+F 3 "~" H 5300 5275 50  0001 C CNN
+	1    5300 5275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4225 5175 5100 5175
+Connection ~ 4225 5175
+Wire Wire Line
+	5100 5275 5100 5175
+Connection ~ 5100 5175
+Wire Wire Line
+	3600 6200 4000 6200
+$Comp
+L power:GND #PWR?
+U 1 1 6129EA2C
+P 5075 6200
+F 0 "#PWR?" H 5075 5950 50  0001 C CNN
+F 1 "GND" H 5080 6027 50  0001 C CNN
+F 2 "" H 5075 6200 50  0001 C CNN
+F 3 "" H 5075 6200 50  0001 C CNN
+	1    5075 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6200 5075 6200
+Connection ~ 4000 6200
+Wire Wire Line
+	5075 6100 5075 6200
+Connection ~ 5075 6200
 $EndSCHEMATC
