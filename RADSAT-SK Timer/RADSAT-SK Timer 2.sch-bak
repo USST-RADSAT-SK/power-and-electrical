@@ -757,7 +757,7 @@ F 3 "~" H 4975 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3025 5125 0    50   ~ 0
-AUX PORT TO RBF
+DETECT LOGIC FOR RBF
 $Comp
 L Device:Battery_Cell BT?
 U 1 1 611F46E7
@@ -770,10 +770,10 @@ F 3 "~" V 4225 5435 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J?
+L Connector:Conn_01x05_Male J208
 U 1 1 612116BF
 P 3250 5700
-F 0 "J?" H 3358 6081 50  0000 C CNN
+F 0 "J208" H 3358 6081 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 3358 5990 50  0000 C CNN
 F 2 "" H 3250 5700 50  0001 C CNN
 F 3 "~" H 3250 5700 50  0001 C CNN
