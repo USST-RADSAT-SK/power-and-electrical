@@ -304,7 +304,6 @@ Wire Wire Line
 	9925 1625 9925 1425
 Wire Wire Line
 	9925 1425 9550 1425
-Connection ~ 9550 1425
 Wire Wire Line
 	9100 2025 9925 2025
 Connection ~ 9925 2025
@@ -375,16 +374,12 @@ F 3 "" H 1550 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1675 7000 1550 7000
-Wire Wire Line
-	1550 7000 1550 6900
+	1675 7000 1300 7000
 Wire Wire Line
 	1675 7100 1300 7100
-Wire Wire Line
-	1675 7200 1300 7200
-Text GLabel 1300 7100 0    50   Input ~ 0
+Text GLabel 1300 7000 0    50   Input ~ 0
 I2C_DATA
-Text GLabel 1300 7200 0    50   Input ~ 0
+Text GLabel 1300 7100 0    50   Input ~ 0
 I2C_CLK
 Text Notes 500  6475 0    50   ~ 0
 Antenna Connector
@@ -692,21 +687,21 @@ Wire Notes Line
 Wire Notes Line
 	6425 5000 6425 7800
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 611EADEE
 P 3600 6050
-F 0 "R?" H 3670 6096 50  0000 L CNN
+F 0 "R1" H 3670 6096 50  0000 L CNN
 F 1 "R" H 3670 6005 50  0000 L CNN
-F 2 "" V 3530 6050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3530 6050 50  0001 C CNN
 F 3 "~" H 3600 6050 50  0001 C CNN
 	1    3600 6050
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:5KPxxA D?
+L Diode:5KPxxA D1
 U 1 1 611ED310
 P 4000 6050
-F 0 "D?" V 3954 6130 50  0000 L CNN
+F 0 "D1" V 3954 6130 50  0000 L CNN
 F 1 "5KPxxA" V 4045 6130 50  0000 L CNN
 F 2 "Diode_THT:D_P600_R-6_P20.00mm_Horizontal" H 4000 5850 50  0001 C CNN
 F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/5kp65.pdf" H 3950 6050 50  0001 C CNN
@@ -714,23 +709,23 @@ F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/5kp65.pdf" H 3950 6
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 611EE061
 P 4500 5900
-F 0 "R?" V 4293 5900 50  0000 C CNN
+F 0 "R2" V 4293 5900 50  0000 C CNN
 F 1 "R" V 4384 5900 50  0000 C CNN
-F 2 "" V 4430 5900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 5900 50  0001 C CNN
 F 3 "~" H 4500 5900 50  0001 C CNN
 	1    4500 5900
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS Q?
+L Device:Q_NMOS_DGS Q1
 U 1 1 611F24A8
 P 4975 5900
-F 0 "Q?" H 5179 5946 50  0000 L CNN
+F 0 "Q1" H 5179 5946 50  0000 L CNN
 F 1 "Q_NMOS_DGS" H 5179 5855 50  0000 L CNN
-F 2 "" H 5175 6000 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5175 6000 50  0001 C CNN
 F 3 "~" H 4975 5900 50  0001 C CNN
 	1    4975 5900
 	1    0    0    -1  
@@ -738,12 +733,12 @@ $EndComp
 Text Notes 3025 5125 0    50   ~ 0
 DETECT LOGIC FOR RBF
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell BT1
 U 1 1 611F46E7
 P 4225 5375
-F 0 "BT?" H 4343 5471 50  0000 L CNN
+F 0 "BT1" H 4343 5471 50  0000 L CNN
 F 1 "Battery_Cell" H 4343 5380 50  0000 L CNN
-F 2 "" V 4225 5435 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 4225 5435 50  0001 C CNN
 F 3 "~" V 4225 5435 50  0001 C CNN
 	1    4225 5375
 	1    0    0    -1  
@@ -794,10 +789,10 @@ Wire Wire Line
 Wire Wire Line
 	3900 5175 3900 5700
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J1
 U 1 1 6126FDD8
 P 5300 5275
-F 0 "J?" H 5272 5157 50  0000 R CNN
+F 0 "J1" H 5272 5157 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 5272 5248 50  0000 R CNN
 F 2 "Connector_Molex:Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical" H 5300 5275 50  0001 C CNN
 F 3 "~" H 5300 5275 50  0001 C CNN
@@ -813,10 +808,10 @@ Connection ~ 5100 5175
 Wire Wire Line
 	3600 6200 4000 6200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0117
 U 1 1 6129EA2C
 P 5075 6200
-F 0 "#PWR?" H 5075 5950 50  0001 C CNN
+F 0 "#PWR0117" H 5075 5950 50  0001 C CNN
 F 1 "GND" H 5080 6027 50  0001 C CNN
 F 2 "" H 5075 6200 50  0001 C CNN
 F 3 "" H 5075 6200 50  0001 C CNN
@@ -834,7 +829,7 @@ L Connector_Generic:Conn_01x07 J201
 U 1 1 6028804A
 P 1875 7100
 F 0 "J201" H 1955 7092 50  0000 L CNN
-F 1 "Conn_01x04" H 1955 7001 50  0000 L CNN
+F 1 "Conn_01x07" H 1955 7001 50  0000 L CNN
 F 2 "Connector_Molex:Molex_PicoBlade_53047-0710_1x07_P1.25mm_Vertical" H 1875 7100 50  0001 C CNN
 F 3 "~" H 1875 7100 50  0001 C CNN
 	1    1875 7100
@@ -858,7 +853,6 @@ Wire Wire Line
 Connection ~ 1675 7400
 Wire Wire Line
 	1675 6900 1550 6900
-Connection ~ 1550 6900
 Wire Wire Line
 	1550 6650 1550 6800
 Wire Wire Line
@@ -866,4 +860,7 @@ Wire Wire Line
 Connection ~ 1550 6800
 Wire Wire Line
 	1550 6800 1550 6900
+Wire Wire Line
+	1675 7300 1675 7200
+Connection ~ 1675 7300
 $EndSCHEMATC
