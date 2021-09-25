@@ -367,51 +367,38 @@ Christopher Elash
 Text Notes 10625 7625 0    50   ~ 0
 B
 $Comp
-L Connector_Generic:Conn_01x04 J201
-U 1 1 6028804A
-P 1875 7100
-F 0 "J201" H 1955 7092 50  0000 L CNN
-F 1 "Conn_01x04" H 1955 7001 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-04P-1.25DSA_1x04_P1.25mm_Vertical" H 1875 7100 50  0001 C CNN
-F 3 "~" H 1875 7100 50  0001 C CNN
-	1    1875 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1675 7300 1675 7425
-$Comp
 L power:GND #PWR0212
 U 1 1 6028D6A8
-P 1675 7425
-F 0 "#PWR0212" H 1675 7175 50  0001 C CNN
-F 1 "GND" H 1680 7252 50  0000 C CNN
-F 2 "" H 1675 7425 50  0001 C CNN
-F 3 "" H 1675 7425 50  0001 C CNN
-	1    1675 7425
+P 1675 7500
+F 0 "#PWR0212" H 1675 7250 50  0001 C CNN
+F 1 "GND" H 1680 7327 50  0000 C CNN
+F 2 "" H 1675 7500 50  0001 C CNN
+F 3 "" H 1675 7500 50  0001 C CNN
+	1    1675 7500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0211
 U 1 1 6028E370
-P 1550 6875
-F 0 "#PWR0211" H 1550 6725 50  0001 C CNN
-F 1 "+3V3" H 1565 7048 50  0000 C CNN
-F 2 "" H 1550 6875 50  0001 C CNN
-F 3 "" H 1550 6875 50  0001 C CNN
-	1    1550 6875
+P 1675 6650
+F 0 "#PWR0211" H 1675 6500 50  0001 C CNN
+F 1 "+3V3" H 1690 6823 50  0000 C CNN
+F 2 "" H 1675 6650 50  0001 C CNN
+F 3 "" H 1675 6650 50  0001 C CNN
+	1    1675 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1675 7000 1550 7000
+	1800 6775 1675 6775
 Wire Wire Line
-	1550 7000 1550 6875
+	1675 6775 1675 6650
 Wire Wire Line
-	1675 7100 1300 7100
+	1800 6975 1425 6975
 Wire Wire Line
-	1675 7200 1300 7200
-Text GLabel 1300 7100 0    50   Input ~ 0
+	1800 7075 1425 7075
+Text GLabel 1425 6975 0    50   Input ~ 0
 I2C_DATA
-Text GLabel 1300 7200 0    50   Input ~ 0
+Text GLabel 1425 7075 0    50   Input ~ 0
 I2C_CLK
 Wire Notes Line
 	2900 6300 2900 7800
@@ -420,59 +407,43 @@ Antenna Connector
 Wire Notes Line
 	11125 5000 400  5000
 Text Notes 700  700  0    50   ~ 0
-Battery Boost, and Inhibits
+Battery Boost, Case Switches and RBF
 $Comp
-L Connector_Generic:Conn_01x02 J203
+L Connector_Generic:Conn_01x02 J204
 U 1 1 603CDD91
-P 4750 7150
-F 0 "J203" H 4830 7142 50  0000 L CNN
-F 1 "Conn_01x02" H 4830 7051 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4750 7150 50  0001 C CNN
-F 3 "~" H 4750 7150 50  0001 C CNN
-	1    4750 7150
+P 5675 6500
+F 0 "J204" H 5755 6492 50  0000 L CNN
+F 1 "Conn_01x02" H 5755 6401 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 5675 6500 50  0001 C CNN
+F 3 "~" H 5675 6500 50  0001 C CNN
+	1    5675 6500
 	1    0    0    -1  
 $EndComp
-Text GLabel 4550 6650 0    50   Input ~ 0
+Text GLabel 3475 6650 0    50   Input ~ 0
 BUS_EN
-Wire Wire Line
-	4550 7425 4550 7250
 Wire Notes Line
 	6425 6300 6425 7800
 Wire Notes Line
 	475  6300 6425 6300
 Text Notes 2975 6450 0    50   ~ 0
-Electrical Inhibit Outputs
+Electrical Inhibits Logic and Outputs
 Wire Wire Line
-	4550 6650 4550 6850
-$Comp
-L power:GND #PWR0116
-U 1 1 600EF091
-P 4550 7425
-F 0 "#PWR0116" H 4550 7175 50  0001 C CNN
-F 1 "GND" H 4555 7252 50  0000 C CNN
-F 2 "" H 4550 7425 50  0001 C CNN
-F 3 "" H 4550 7425 50  0001 C CNN
-	1    4550 7425
-	1    0    0    -1  
-$EndComp
+	3475 6650 3475 6850
 Wire Wire Line
-	4825 2625 4825 2925
+	4825 2625 4825 2800
 Wire Wire Line
-	4550 6850 4875 6850
+	3475 6850 3800 6850
 Wire Wire Line
-	4875 6850 4875 6800
-Connection ~ 4550 6850
-Wire Wire Line
-	4550 6850 4550 7150
+	3800 6850 3800 6800
 $Comp
 L power:+5V #PWR0105
 U 1 1 6017CE3E
-P 4875 6800
-F 0 "#PWR0105" H 4875 6650 50  0001 C CNN
-F 1 "+5V" H 4890 6973 50  0000 C CNN
-F 2 "" H 4875 6800 50  0001 C CNN
-F 3 "" H 4875 6800 50  0001 C CNN
-	1    4875 6800
+P 3800 6800
+F 0 "#PWR0105" H 3800 6650 50  0001 C CNN
+F 1 "+5V" H 3815 6973 50  0000 C CNN
+F 2 "" H 3800 6800 50  0001 C CNN
+F 3 "" H 3800 6800 50  0001 C CNN
+	1    3800 6800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -565,7 +536,7 @@ Connection ~ 6325 1850
 Wire Wire Line
 	6325 1850 7700 1850
 Wire Wire Line
-	4800 3225 4800 4150
+	4800 3225 4800 3500
 Connection ~ 4800 4150
 Wire Wire Line
 	4800 4150 5000 4150
@@ -574,12 +545,239 @@ L RADSAT-SK-Timer-rescue:USB_B_Micro-Connector-RADSAT-SK-Timer-rescue J204
 U 1 1 60C6CBAB
 P 925 5600
 AR Path="/60C6CBAB" Ref="J204"  Part="1" 
-AR Path="/602E25D3/60C6CBAB" Ref="J204"  Part="1" 
-F 0 "J204" H 980 6067 50  0000 C CNN
+AR Path="/602E25D3/60C6CBAB" Ref="J222"  Part="1" 
+F 0 "J222" H 980 6067 50  0000 C CNN
 F 1 "USB_B_Micro" H 980 5976 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105133-0001" H 1075 5550 50  0001 C CNN
 F 3 "~" H 1075 5550 50  0001 C CNN
 	1    925  5600
 	1    0    0    -1  
+$EndComp
+NoConn ~ 825  6000
+NoConn ~ 1225 5800
+NoConn ~ 1225 5600
+NoConn ~ 1225 5700
+Text GLabel 1350 5400 2    50   Input ~ 0
+USB_Charge
+Wire Wire Line
+	1350 5400 1225 5400
+$Comp
+L power:GND #PWR?
+U 1 1 61514573
+P 925 6000
+F 0 "#PWR?" H 925 5750 50  0001 C CNN
+F 1 "GND" H 930 5827 50  0000 C CNN
+F 2 "" H 925 6000 50  0001 C CNN
+F 3 "" H 925 6000 50  0001 C CNN
+	1    925  6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J201
+U 1 1 61516072
+P 2000 7075
+F 0 "J201" H 2080 7117 50  0000 L CNN
+F 1 "Conn_01x07" H 2080 7026 50  0000 L CNN
+F 2 "" H 2000 7075 50  0001 C CNN
+F 3 "~" H 2000 7075 50  0001 C CNN
+	1    2000 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J206
+U 1 1 615175F5
+P 5675 7475
+F 0 "J206" H 5755 7467 50  0000 L CNN
+F 1 "Conn_01x02" H 5755 7376 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 5675 7475 50  0001 C CNN
+F 3 "~" H 5675 7475 50  0001 C CNN
+	1    5675 7475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J205
+U 1 1 61517D5B
+P 5675 7000
+F 0 "J205" H 5755 6992 50  0000 L CNN
+F 1 "Conn_01x02" H 5755 6901 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 5675 7000 50  0001 C CNN
+F 3 "~" H 5675 7000 50  0001 C CNN
+	1    5675 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J203
+U 1 1 615188F9
+P 8350 3875
+F 0 "J203" H 8430 3867 50  0000 L CNN
+F 1 "Conn_01x02" H 8430 3776 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 8350 3875 50  0001 C CNN
+F 3 "~" H 8350 3875 50  0001 C CNN
+	1    8350 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J202
+U 1 1 6151A0C4
+P 2625 3500
+F 0 "J202" H 2543 3075 50  0000 C CNN
+F 1 "Conn_01x05" H 2543 3166 50  0000 C CNN
+F 2 "" H 2625 3500 50  0001 C CNN
+F 3 "~" H 2625 3500 50  0001 C CNN
+	1    2625 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1675 6775 1675 6875
+Wire Wire Line
+	1675 6875 1800 6875
+Connection ~ 1675 6775
+Wire Wire Line
+	1675 7175 1800 7175
+Wire Wire Line
+	1675 7175 1675 7275
+Wire Wire Line
+	1800 7275 1675 7275
+Connection ~ 1675 7275
+Wire Wire Line
+	1675 7275 1675 7375
+Wire Wire Line
+	1800 7375 1675 7375
+Connection ~ 1675 7375
+Wire Wire Line
+	1675 7375 1675 7500
+Text Notes 500  5100 0    50   ~ 0
+USB Charger for Battery
+Wire Notes Line
+	2125 5000 2125 6300
+$Comp
+L Transistor_FET:IRLML2060 Q?
+U 1 1 6156AA9A
+P 4700 3700
+AR Path="/6156AA9A" Ref="Q?"  Part="1" 
+AR Path="/602E25D3/6156AA9A" Ref="Q?"  Part="1" 
+F 0 "Q?" H 4475 3625 50  0000 L CNN
+F 1 "IRLML2060" H 4375 3525 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4900 3625 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 4700 3700 50  0001 L CNN
+	1    4700 3700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4800 3900 4800 4150
+$Comp
+L Device:R R221
+U 1 1 61579880
+P 4125 3700
+F 0 "R221" V 3918 3700 50  0000 C CNN
+F 1 "100" V 4009 3700 50  0000 C CNN
+F 2 "" V 4055 3700 50  0001 C CNN
+F 3 "~" H 4125 3700 50  0001 C CNN
+	1    4125 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R220
+U 1 1 6157AAE3
+P 3225 3975
+F 0 "R220" H 3295 4021 50  0000 L CNN
+F 1 "300k" H 3295 3930 50  0000 L CNN
+F 2 "" V 3155 3975 50  0001 C CNN
+F 3 "~" H 3225 3975 50  0001 C CNN
+	1    3225 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D201
+U 1 1 6157B7B7
+P 3575 3975
+F 0 "D201" V 3529 4055 50  0000 L CNN
+F 1 "D_Zener" V 3620 4055 50  0000 L CNN
+F 2 "" H 3575 3975 50  0001 C CNN
+F 3 "~" H 3575 3975 50  0001 C CNN
+	1    3575 3975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4275 3700 4500 3700
+Wire Wire Line
+	3975 3700 3575 3700
+Wire Wire Line
+	3225 3700 3225 3825
+Connection ~ 3575 3700
+Wire Wire Line
+	3575 3700 3225 3700
+Wire Wire Line
+	3575 3700 3575 3825
+Wire Wire Line
+	3575 4125 3400 4125
+Connection ~ 3400 4125
+Wire Wire Line
+	3400 4125 3225 4125
+$Comp
+L power:GND #PWR?
+U 1 1 61592A30
+P 3400 4300
+F 0 "#PWR?" H 3400 4050 50  0001 C CNN
+F 1 "GND" H 3405 4127 50  0000 C CNN
+F 2 "" H 3400 4300 50  0001 C CNN
+F 3 "" H 3400 4300 50  0001 C CNN
+	1    3400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4125 3400 4300
+Wire Wire Line
+	3225 3700 2950 3700
+Connection ~ 3225 3700
+Wire Wire Line
+	2825 3500 2950 3500
+Wire Wire Line
+	2950 3500 2950 3600
+Connection ~ 2950 3700
+Wire Wire Line
+	2950 3700 2825 3700
+Wire Wire Line
+	2825 3600 2950 3600
+Connection ~ 2950 3600
+Wire Wire Line
+	2950 3600 2950 3700
+Wire Wire Line
+	4825 2800 3100 2800
+Wire Wire Line
+	3100 2800 3100 3300
+Wire Wire Line
+	3100 3300 2950 3300
+Connection ~ 4825 2800
+Wire Wire Line
+	4825 2800 4825 2925
+Wire Wire Line
+	2825 3400 2950 3400
+Wire Wire Line
+	2950 3400 2950 3300
+Connection ~ 2950 3300
+Wire Wire Line
+	2950 3300 2825 3300
+$Comp
+L Device:D D?
+U 1 1 615B7582
+P 6925 3725
+F 0 "D?" H 6925 3508 50  0000 C CNN
+F 1 "D" H 6925 3599 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 6925 3725 50  0001 C CNN
+F 3 "~" H 6925 3725 50  0001 C CNN
+	1    6925 3725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 615BB367
+P 6925 4000
+F 0 "D?" H 6925 3783 50  0000 C CNN
+F 1 "D" H 6925 3874 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 6925 4000 50  0001 C CNN
+F 3 "~" H 6925 4000 50  0001 C CNN
+	1    6925 4000
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
