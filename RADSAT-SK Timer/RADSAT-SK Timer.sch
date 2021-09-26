@@ -1535,7 +1535,6 @@ NoConn ~ 9850 4225
 NoConn ~ 10350 4325
 NoConn ~ 9850 4325
 NoConn ~ 9850 4425
-NoConn ~ 10350 4425
 NoConn ~ 10350 4525
 NoConn ~ 9850 4525
 NoConn ~ 9850 4625
@@ -1649,4 +1648,8 @@ F 3 "" H 2100 700 50  0001 C CNN
 	1    2100 700 
 	1    0    0    -1  
 $EndComp
+Text GLabel 10525 4425 2    50   Input ~ 0
+USB_Charge
+Wire Wire Line
+	10525 4425 10350 4425
 $EndSCHEMATC

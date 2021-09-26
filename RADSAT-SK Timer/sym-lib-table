@@ -1,4 +1,10 @@
 (sym_lib_table
   (lib (name RADSAT-SK_Timer)(type Legacy)(uri ${KIPRJMOD}/RADSAT-SK_Timer.lib)(options "")(descr ""))
   (lib (name RADSAT-SK-Timer-rescue)(type Legacy)(uri "${KIPRJMOD}/RADSAT-SK Timer-rescue.lib")(options "")(descr ""))
+  (lib (name LM397MF)(type Legacy)(uri ${KIPRJMOD}/LM397/LM397MF.lib)(options "")(descr ""))
+  (lib (name LP2980IM5-5.0)(type Legacy)(uri ${KIPRJMOD}/LP29080/LP2980IM5-5.0.lib)(options "")(descr ""))
+  (lib (name LTC3440EMSPBF)(type Legacy)(uri ${KIPRJMOD}/LTC3440/LTC3440EMSPBF.lib)(options "")(descr ""))
+  (lib (name SJ1-3545N)(type Legacy)(uri ${KIPRJMOD}/RBF/SJ1-3545N.lib)(options "")(descr ""))
+  (lib (name TPS3700DDCR)(type Legacy)(uri ${KIPRJMOD}/TPS3700/TPS3700DDCR.lib)(options "")(descr ""))
+  (lib (name ZX62WRD-B-5PC)(type Legacy)(uri ${KIPRJMOD}/USB-Hirose-ZX62WRD-B-5PC/ZX62WRD-B-5PC.lib)(options "")(descr ""))
 )
