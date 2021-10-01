@@ -516,19 +516,14 @@ Wire Wire Line
 Wire Wire Line
 	4825 1625 4825 1450
 Wire Wire Line
-	4825 1450 6325 1450
+	4825 1450 6300 1450
 Connection ~ 4825 1625
 Wire Wire Line
 	4825 1625 5075 1625
 Wire Wire Line
 	4500 4150 4800 4150
 Wire Wire Line
-	6325 1450 6325 1850
-Wire Wire Line
-	6300 1850 6325 1850
-Connection ~ 6325 1850
-Wire Wire Line
-	6325 1850 7700 1850
+	6300 1450 6300 1850
 Wire Wire Line
 	4800 3225 4800 3500
 Connection ~ 4800 4150
@@ -584,14 +579,14 @@ F 3 "~" H 5675 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J203
+L Connector_Generic:Conn_01x03 J203
 U 1 1 615188F9
-P 4300 5525
-F 0 "J203" H 4380 5517 50  0000 L CNN
-F 1 "Conn_01x02" H 4380 5426 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4300 5525 50  0001 C CNN
-F 3 "~" H 4300 5525 50  0001 C CNN
-	1    4300 5525
+P 4300 5625
+F 0 "J203" H 4380 5617 50  0000 L CNN
+F 1 "Conn_01x03" H 4380 5526 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-03P-1.25DSA_1x03_P1.25mm_Vertical" H 4300 5625 50  0001 C CNN
+F 3 "~" H 4300 5625 50  0001 C CNN
+	1    4300 5625
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -889,4 +884,8 @@ Wire Wire Line
 	1150 5900 1300 5900
 Wire Wire Line
 	1300 5900 1300 6025
+NoConn ~ 4100 5725
+Connection ~ 6300 1850
+Wire Wire Line
+	6300 1850 7700 1850
 $EndSCHEMATC
