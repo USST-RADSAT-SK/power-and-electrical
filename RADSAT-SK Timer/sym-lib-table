@@ -6,5 +6,5 @@
   (lib (name LTC3440EMSPBF)(type Legacy)(uri ${KIPRJMOD}/LTC3440/LTC3440EMSPBF.lib)(options "")(descr ""))
   (lib (name SJ1-3545N)(type Legacy)(uri ${KIPRJMOD}/RBF/SJ1-3545N.lib)(options "")(descr ""))
   (lib (name TPS3700DDCR)(type Legacy)(uri ${KIPRJMOD}/TPS3700/TPS3700DDCR.lib)(options "")(descr ""))
-  (lib (name ZX62WRD-B-5PC)(type Legacy)(uri ${KIPRJMOD}/USB-Hirose-ZX62WRD-B-5PC/ZX62WRD-B-5PC.lib)(options "")(descr ""))
+  (lib (name CONN_ZX62WRD-B-5PC_HIR)(type Legacy)(uri ${KIPRJMOD}/USB-Hirose-ZX62WRD-B-5PC/CONN_ZX62WRD-B-5PC_HIR.lib)(options "")(descr ""))
 )

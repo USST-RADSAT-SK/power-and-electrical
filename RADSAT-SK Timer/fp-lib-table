@@ -7,4 +7,5 @@
   (lib (name TPS3700)(type KiCad)(uri ${KIPRJMOD}/TPS3700)(options "")(descr ""))
   (lib (name LM397)(type KiCad)(uri ${KIPRJMOD}/LM397)(options "")(descr ""))
   (lib (name ZX62WRD-B-5PC)(type KiCad)(uri ${KIPRJMOD}/USB-Hirose-ZX62WRD-B-5PC/ZX62WRD-B-5PC.pretty)(options "")(descr ""))
+  (lib (name CONN_ZX62WRD-B-5PC_HIR)(type KiCad)(uri ${KIPRJMOD}/USB-Hirose-ZX62WRD-B-5PC/CONN_ZX62WRD-B-5PC_HIR.pretty)(options "")(descr ""))
 )
