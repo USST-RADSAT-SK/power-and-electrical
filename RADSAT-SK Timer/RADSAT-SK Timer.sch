@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:RADSAT-SK Timer-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -261,7 +260,7 @@ F 3 "" H 3250 2225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RADSAT-SK-Timer-rescue:CD4052B-Analog_Switch U104
+L Analog_Switch:CD4052B U104
 U 1 1 5FF9C3C1
 P 9125 1475
 F 0 "U104" H 9125 2356 50  0000 C CNN
@@ -380,17 +379,6 @@ Text Notes 7075 625  0    79   ~ 0
 Voter
 Wire Wire Line
 	8050 1675 8050 2175
-$Comp
-L power:+BATT #PWR0104
-U 1 1 601B4594
-P 2100 700
-F 0 "#PWR0104" H 2100 550 50  0001 C CNN
-F 1 "+BATT" H 2100 875 50  0000 C CNN
-F 2 "" H 2100 700 50  0001 C CNN
-F 3 "" H 2100 700 50  0001 C CNN
-	1    2100 700 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9975 775  10625 775 
 Connection ~ 9975 775 
@@ -409,15 +397,10 @@ Wire Wire Line
 	9225 775  9975 775 
 Text Notes 7150 2675 0    79   ~ 0
 CSKB Connectors
-Wire Wire Line
-	2100 750  2100 700 
-Connection ~ 2100 750 
-Wire Wire Line
-	2100 750  1300 750 
 Text Notes 525  6925 0    79   ~ 0
 Batteries, Charger, Booster, Mechanical Inhibits, Antenna Connector, Output Connectors
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q104
+L Transistor_FET:IRLML2060 Q104
 U 1 1 600624B3
 P 1800 1525
 F 0 "Q104" H 2004 1571 50  0000 L CNN
@@ -428,7 +411,7 @@ F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535
 	1    0    0    -1  
 $EndComp
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q107
+L Transistor_FET:IRLML2060 Q107
 U 1 1 600655A8
 P 4300 1875
 F 0 "Q107" H 4075 1800 50  0000 L CNN
@@ -551,7 +534,7 @@ F 3 "~" H 600 2075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q101
+L Transistor_FET:IRLML2060 Q101
 U 1 1 6005D75A
 P 1200 1725
 F 0 "Q101" H 1404 1771 50  0000 L CNN
@@ -585,7 +568,7 @@ Connection ~ 600  1725
 Wire Wire Line
 	600  750  600  1725
 $Comp
-L RADSAT-SK-Timer-rescue:LM397MF-LM397MF U101
+L LM397MF:LM397MF U101
 U 1 1 600CAF9B
 P 5525 1250
 F 0 "U101" H 5525 1450 50  0000 C CNN
@@ -895,7 +878,7 @@ Connection ~ 2100 2850
 Wire Wire Line
 	2100 2850 1300 2850
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q105
+L Transistor_FET:IRLML2060 Q105
 U 1 1 6023BB16
 P 1800 3625
 F 0 "Q105" H 2004 3671 50  0000 L CNN
@@ -906,7 +889,7 @@ F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535
 	1    0    0    -1  
 $EndComp
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q108
+L Transistor_FET:IRLML2060 Q108
 U 1 1 6023BB1C
 P 4300 3975
 F 0 "Q108" H 4075 3900 50  0000 L CNN
@@ -939,7 +922,7 @@ F 3 "~" H 600 4175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q102
+L Transistor_FET:IRLML2060 Q102
 U 1 1 6023BB2E
 P 1200 3825
 F 0 "Q102" H 1404 3871 50  0000 L CNN
@@ -973,7 +956,7 @@ Connection ~ 600  3825
 Wire Wire Line
 	600  2850 600  3825
 $Comp
-L RADSAT-SK-Timer-rescue:LM397MF-LM397MF U102
+L LM397MF:LM397MF U102
 U 1 1 6023BB41
 P 5525 3350
 F 0 "U102" H 5525 3550 50  0000 C CNN
@@ -1283,7 +1266,7 @@ Connection ~ 2100 4900
 Wire Wire Line
 	2100 4900 1300 4900
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q106
+L Transistor_FET:IRLML2060 Q106
 U 1 1 60268B09
 P 1800 5675
 F 0 "Q106" H 2004 5721 50  0000 L CNN
@@ -1294,7 +1277,7 @@ F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535
 	1    0    0    -1  
 $EndComp
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q109
+L Transistor_FET:IRLML2060 Q109
 U 1 1 60268B0F
 P 4300 6025
 F 0 "Q109" H 4075 5950 50  0000 L CNN
@@ -1327,7 +1310,7 @@ F 3 "~" H 600 6225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RADSAT-SK-Timer-rescue:IRLML2060-Transistor_FET Q103
+L Transistor_FET:IRLML2060 Q103
 U 1 1 60268B21
 P 1200 5875
 F 0 "Q103" H 1404 5921 50  0000 L CNN
@@ -1361,7 +1344,7 @@ Connection ~ 600  5875
 Wire Wire Line
 	600  4900 600  5875
 $Comp
-L RADSAT-SK-Timer-rescue:LM397MF-LM397MF U103
+L LM397MF:LM397MF U103
 U 1 1 60268B34
 P 5525 5400
 F 0 "U103" H 5525 5600 50  0000 C CNN
@@ -1552,7 +1535,6 @@ NoConn ~ 9850 4225
 NoConn ~ 10350 4325
 NoConn ~ 9850 4325
 NoConn ~ 9850 4425
-NoConn ~ 10350 4425
 NoConn ~ 10350 4525
 NoConn ~ 9850 4525
 NoConn ~ 9850 4625
@@ -1645,9 +1627,29 @@ Wire Wire Line
 	7600 2175 8050 2175
 Connection ~ 8050 2175
 Wire Wire Line
-	2100 750  2875 750 
-Wire Wire Line
 	2100 2850 2875 2850
 Wire Wire Line
 	2100 4900 2875 4900
+Wire Wire Line
+	2100 750  2875 750 
+Wire Wire Line
+	2100 750  1300 750 
+Connection ~ 2100 750 
+Wire Wire Line
+	2100 750  2100 700 
+$Comp
+L power:+BATT #PWR0104
+U 1 1 601B4594
+P 2100 700
+F 0 "#PWR0104" H 2100 550 50  0001 C CNN
+F 1 "+BATT" H 2100 875 50  0000 C CNN
+F 2 "" H 2100 700 50  0001 C CNN
+F 3 "" H 2100 700 50  0001 C CNN
+	1    2100 700 
+	1    0    0    -1  
+$EndComp
+Text GLabel 10525 4425 2    50   Input ~ 0
+USB_Charge
+Wire Wire Line
+	10525 4425 10350 4425
 $EndSCHEMATC
