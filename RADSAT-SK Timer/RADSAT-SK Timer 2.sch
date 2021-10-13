@@ -581,12 +581,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J203
 U 1 1 615188F9
-P 4300 5625
-F 0 "J203" H 4380 5617 50  0000 L CNN
-F 1 "Conn_01x03" H 4380 5526 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-03P-1.25DSA_1x03_P1.25mm_Vertical" H 4300 5625 50  0001 C CNN
-F 3 "~" H 4300 5625 50  0001 C CNN
-	1    4300 5625
+P 4375 5375
+F 0 "J203" H 4455 5367 50  0000 L CNN
+F 1 "Conn_01x03" H 4455 5276 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-03P-1.25DSA_1x03_P1.25mm_Vertical" H 4375 5375 50  0001 C CNN
+F 3 "~" H 4375 5375 50  0001 C CNN
+	1    4375 5375
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -800,17 +800,6 @@ F 3 "" H 4450 7525 50  0001 C CNN
 	1    4450 7525
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 61557785
-P 3900 5800
-F 0 "#PWR0119" H 3900 5550 50  0001 C CNN
-F 1 "GND" H 3905 5627 50  0000 C CNN
-F 2 "" H 3900 5800 50  0001 C CNN
-F 3 "" H 3900 5800 50  0001 C CNN
-	1    3900 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5475 6500 4625 6500
 Wire Wire Line
@@ -852,17 +841,6 @@ Wire Wire Line
 	4800 7100 4800 6600
 Text Notes 2175 5125 0    50   ~ 0
 RBF Logic for Batt Board Inhibit
-Wire Wire Line
-	3125 5425 3125 5525
-Wire Wire Line
-	3900 5800 3900 5625
-Wire Wire Line
-	3900 5625 4100 5625
-Wire Wire Line
-	4100 5525 3125 5525
-Connection ~ 3125 5525
-Wire Wire Line
-	3125 5525 3125 5700
 Wire Notes Line
 	4925 5000 4925 6300
 $Comp
@@ -884,8 +862,38 @@ Wire Wire Line
 	1150 5900 1300 5900
 Wire Wire Line
 	1300 5900 1300 6025
-NoConn ~ 4100 5725
+NoConn ~ 4175 5475
 Connection ~ 6300 1850
 Wire Wire Line
 	6300 1850 7700 1850
+$Comp
+L Device:Q_PJFET_DGS Q203
+U 1 1 6167F061
+P 3475 5525
+F 0 "Q203" H 3665 5571 50  0000 L CNN
+F 1 "PJFET" H 3665 5480 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 3675 5625 50  0001 C CNN
+F 3 "~" H 3475 5525 50  0001 C CNN
+	1    3475 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 5425 3125 5525
+Wire Wire Line
+	3275 5525 3125 5525
+Connection ~ 3125 5525
+Wire Wire Line
+	3125 5525 3125 5700
+Wire Wire Line
+	3575 5325 3575 5275
+Wire Wire Line
+	3575 5275 4175 5275
+Wire Wire Line
+	4175 5375 4075 5375
+Wire Wire Line
+	4075 5775 3575 5775
+Wire Wire Line
+	3575 5775 3575 5725
+Wire Wire Line
+	4075 5375 4075 5775
 $EndSCHEMATC
