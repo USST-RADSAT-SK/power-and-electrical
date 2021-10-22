@@ -207,19 +207,6 @@ Connection ~ 7375 2025
 Connection ~ 6300 2025
 Wire Wire Line
 	6300 2025 6300 1850
-$Comp
-L Diode:MBR1020VL D203
-U 1 1 60121A1E
-P 9400 1425
-AR Path="/60121A1E" Ref="D203"  Part="1" 
-AR Path="/602E25D3/60121A1E" Ref="D203"  Part="1" 
-F 0 "D203" H 9400 1209 50  0000 C CNN
-F 1 "MBRM1020T3" H 9400 1300 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 9400 1250 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF" H 9400 1425 50  0001 C CNN
-	1    9400 1425
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9100 1425 9250 1425
 Connection ~ 9100 1425
@@ -709,17 +696,6 @@ Connection ~ 2950 3300
 Wire Wire Line
 	2950 3300 2825 3300
 $Comp
-L Device:D D204
-U 1 1 615B7582
-P 2875 5450
-F 0 "D204" H 2875 5233 50  0000 C CNN
-F 1 "D" H 2875 5324 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 2875 5450 50  0001 C CNN
-F 3 "~" H 2875 5450 50  0001 C CNN
-	1    2875 5450
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:+BATT #PWR0116
 U 1 1 6152A0B5
 P 2375 5450
@@ -867,17 +843,6 @@ F 3 "" H 2350 5725 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D D205
-U 1 1 615BB367
-P 2875 5725
-F 0 "D205" H 2875 5850 50  0000 C CNN
-F 1 "D" H 2875 5925 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 2875 5725 50  0001 C CNN
-F 3 "~" H 2875 5725 50  0001 C CNN
-	1    2875 5725
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:Q_PJFET_DGS Q206
 U 1 1 616CA172
 P 4900 7550
@@ -887,17 +852,6 @@ F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 5100 7650 50  0001 C CNN
 F 3 "https://www.onsemi.com/pdf/datasheet/j175-d.pdf" H 4900 7550 50  0001 C CNN
 	1    4900 7550
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D206
-U 1 1 617CE68C
-P 3500 7300
-F 0 "D206" H 3500 7425 50  0000 C CNN
-F 1 "D" H 3500 7500 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 3500 7300 50  0001 C CNN
-F 3 "~" H 3500 7300 50  0001 C CNN
-	1    3500 7300
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	3650 7300 3750 7300
@@ -1009,4 +963,50 @@ Wire Wire Line
 	4600 7550 4700 7550
 Wire Wire Line
 	3575 5550 3725 5550
+$Comp
+L Device:D_Schottky D203
+U 1 1 60121A1E
+P 9400 1425
+AR Path="/60121A1E" Ref="D203"  Part="1" 
+AR Path="/602E25D3/60121A1E" Ref="D203"  Part="1" 
+F 0 "D203" H 9400 1209 50  0000 C CNN
+F 1 "MBRM120LT3G" H 9400 1300 50  0000 C CNN
+F 2 "Diode_SMD:D_Powermite_AK" H 9400 1250 50  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/mbrm120l-d.pdf" H 9400 1425 50  0001 C CNN
+	1    9400 1425
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D204
+U 1 1 615B7582
+P 2875 5450
+F 0 "D204" H 2875 5233 50  0000 C CNN
+F 1 "SM5817PL-TP" H 2875 5324 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 2875 5450 50  0001 C CNN
+F 3 "~https://www.mccsemi.com/pdf/Products/SM5817PL-SM5819PL(SOD-123FL).PDF" H 2875 5450 50  0001 C CNN
+	1    2875 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D205
+U 1 1 61746364
+P 2875 5725
+F 0 "D205" H 2875 5825 50  0000 C CNN
+F 1 "SM5817PL-TP" H 2875 5625 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 2875 5725 50  0001 C CNN
+F 3 "~https://www.mccsemi.com/pdf/Products/SM5817PL-SM5819PL(SOD-123FL).PDF" H 2875 5725 50  0001 C CNN
+	1    2875 5725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D206
+U 1 1 61747DDB
+P 3500 7300
+F 0 "D206" H 3500 7400 50  0000 C CNN
+F 1 "SM5817PL-TP" H 3500 7200 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3500 7300 50  0001 C CNN
+F 3 "~https://www.mccsemi.com/pdf/Products/SM5817PL-SM5819PL(SOD-123FL).PDF" H 3500 7300 50  0001 C CNN
+	1    3500 7300
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
