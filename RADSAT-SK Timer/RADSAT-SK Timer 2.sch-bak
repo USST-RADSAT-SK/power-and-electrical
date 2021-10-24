@@ -386,8 +386,6 @@ $EndComp
 Text GLabel 3350 6900 0    50   Input ~ 0
 BUS_EN
 Wire Notes Line
-	6425 6300 6425 7800
-Wire Notes Line
 	475  6300 6425 6300
 Text Notes 2975 6450 0    50   ~ 0
 Electrical Inhibits Logic and Outputs
@@ -540,17 +538,6 @@ F 1 "Conn_01x02" H 5955 6901 50  0000 L CNN
 F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 5875 7000 50  0001 C CNN
 F 3 "~" H 5875 7000 50  0001 C CNN
 	1    5875 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J203
-U 1 1 615188F9
-P 4900 5600
-F 0 "J203" H 4980 5592 50  0000 L CNN
-F 1 "Conn_01x03" H 4980 5501 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-03P-1.25DSA_1x03_P1.25mm_Vertical" H 4900 5600 50  0001 C CNN
-F 3 "~" H 4900 5600 50  0001 C CNN
-	1    4900 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -712,8 +699,6 @@ Wire Wire Line
 	2375 5450 2725 5450
 Text Notes 2175 5125 0    50   ~ 0
 RBF Logic for Batt Board Inhibit
-Wire Notes Line
-	5450 4975 5450 6275
 $Comp
 L CONN_ZX62WRD-B-5PC_HIR:ZX62WRD-B-5PC J210
 U 1 1 6159DCFD
@@ -733,21 +718,9 @@ Wire Wire Line
 	1150 5900 1300 5900
 Wire Wire Line
 	1300 5900 1300 6025
-NoConn ~ 4700 5700
 Connection ~ 6300 1850
 Wire Wire Line
 	6300 1850 7700 1850
-$Comp
-L Device:Q_PJFET_DGS Q203
-U 1 1 6167F061
-P 3925 5550
-F 0 "Q203" H 4115 5596 50  0000 L CNN
-F 1 "PJFET" H 4115 5505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 4125 5650 50  0001 C CNN
-F 3 "https://www.onsemi.com/pdf/datasheet/j175-d.pdf" H 3925 5550 50  0001 C CNN
-	1    3925 5550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3125 5450 3125 5550
 Wire Wire Line
@@ -815,18 +788,6 @@ Wire Wire Line
 	5450 7100 5450 7275
 Wire Wire Line
 	5450 7275 5000 7275
-Wire Wire Line
-	4025 5350 4450 5350
-Wire Wire Line
-	4450 5350 4450 5500
-Wire Wire Line
-	4450 5500 4700 5500
-Wire Wire Line
-	4700 5600 4450 5600
-Wire Wire Line
-	4450 5600 4450 5750
-Wire Wire Line
-	4450 5750 4025 5750
 Wire Wire Line
 	3025 5725 3125 5725
 Wire Wire Line
@@ -961,8 +922,6 @@ Wire Wire Line
 	4600 6600 4700 6600
 Wire Wire Line
 	4600 7550 4700 7550
-Wire Wire Line
-	3575 5550 3725 5550
 $Comp
 L Device:D_Schottky D203
 U 1 1 60121A1E
@@ -1009,4 +968,93 @@ F 3 "https://www.panjit.com.tw/upload/datasheet/BAT54TW_SERIES.pdf" H 3500 7400 
 	3    3500 7300
 	-1   0    0    1   
 $EndComp
+$Comp
+L Transistor_FET:IRLML2060 Q?
+U 1 1 61760C64
+P 3850 5850
+AR Path="/61760C64" Ref="Q?"  Part="1" 
+AR Path="/602E25D3/61760C64" Ref="Q203"  Part="1" 
+F 0 "Q203" H 3625 5750 50  0000 L CNN
+F 1 "IRLML2060" H 3525 5650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4050 5775 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 3850 5850 50  0001 L CNN
+	1    3850 5850
+	1    0    0    1   
+$EndComp
+Text GLabel 3150 5175 2    50   Input ~ 0
+InhibV+
+Wire Wire Line
+	3150 5175 3150 5450
+Wire Wire Line
+	3150 5450 3125 5450
+Connection ~ 3125 5450
+$Comp
+L power:GND #PWR0118
+U 1 1 6177DA1C
+P 3675 6175
+F 0 "#PWR0118" H 3675 5925 50  0001 C CNN
+F 1 "GND" H 3680 6002 50  0000 C CNN
+F 2 "" H 3675 6175 50  0001 C CNN
+F 3 "" H 3675 6175 50  0001 C CNN
+	1    3675 6175
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	6425 5000 6425 7800
+Wire Wire Line
+	4825 5500 4825 5450
+Wire Wire Line
+	4825 5600 4825 5650
+Wire Wire Line
+	3575 5550 3575 5850
+Wire Wire Line
+	3575 5850 3650 5850
+Text GLabel 4225 5450 0    50   Input ~ 0
+InhibV+
+$Comp
+L Device:R R13
+U 1 1 617F0E83
+P 3825 6175
+F 0 "R13" V 3975 6200 50  0000 C CNN
+F 1 "1k" V 3900 6175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3755 6175 50  0001 C CNN
+F 3 "~" H 3825 6175 50  0001 C CNN
+	1    3825 6175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 6050 4075 6050
+Wire Wire Line
+	4075 6050 4075 6175
+Wire Wire Line
+	4075 6175 3975 6175
+$Comp
+L Connector_Generic:Conn_01x03 J203
+U 1 1 615188F9
+P 5275 5600
+F 0 "J203" H 5355 5592 50  0000 L CNN
+F 1 "Conn_01x03" H 5355 5501 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-03P-1.25DSA_1x03_P1.25mm_Vertical" H 5275 5600 50  0001 C CNN
+F 3 "~" H 5275 5600 50  0001 C CNN
+	1    5275 5600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5075 5700
+Wire Wire Line
+	5075 5500 4825 5500
+Wire Wire Line
+	5075 5600 4825 5600
+$Comp
+L Relay_SolidState:CPC1117N U210
+U 1 1 61804531
+P 4525 5550
+F 0 "U210" H 4525 5875 50  0000 C CNN
+F 1 "CPC1117N" H 4525 5784 50  0000 C CNN
+F 2 "Package_SO:SOP-4_3.8x4.1mm_P2.54mm" H 4325 5350 50  0001 L CIN
+F 3 "http://www.ixysic.com/home/pdfs.nsf/www/CPC1117N.pdf/$file/CPC1117N.pdf" H 4475 5550 50  0001 L CNN
+	1    4525 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5650 4225 5650
 $EndSCHEMATC
