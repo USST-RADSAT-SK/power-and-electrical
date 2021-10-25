@@ -58,17 +58,6 @@ F 3 "" H 2450 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW204
-U 1 1 6012B10E
-P 3575 1000
-F 0 "SW204" H 3450 1300 50  0000 L CNN
-F 1 "SW_Push" H 3425 1200 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3575 1200 50  0001 C CNN
-F 3 "~" H 3575 1200 50  0001 C CNN
-	1    3575 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L LTC3440EMSPBF:LTC3440EMSPBF U202
 U 1 1 6019F249
 P 7525 1900
@@ -352,17 +341,6 @@ F 1 "SW_Push" H 4425 1200 50  0000 L CNN
 F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4550 1200 50  0001 C CNN
 F 3 "~" H 4550 1200 50  0001 C CNN
 	1    4550 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW203
-U 1 1 60B0F765
-P 3575 1500
-F 0 "SW203" H 3450 1825 50  0000 L CNN
-F 1 "SW_Push" H 3400 1725 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3575 1700 50  0001 C CNN
-F 3 "~" H 3575 1700 50  0001 C CNN
-	1    3575 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1119,17 +1097,9 @@ $EndComp
 Wire Notes Line
 	2125 5975 475  5975
 Wire Wire Line
-	3375 1500 3375 1250
-Wire Wire Line
 	4750 1250 5425 1250
 Wire Wire Line
 	3775 1250 4350 1250
-Connection ~ 3375 1250
-Wire Wire Line
-	3375 1250 3375 1000
-Wire Wire Line
-	2500 1250 3375 1250
-Connection ~ 2500 1250
 Wire Wire Line
 	1600 2275 1600 2150
 Connection ~ 1600 2150
@@ -1153,4 +1123,34 @@ Text Notes 2175 5700 0    50   ~ 0
 Enable Logic for Inhibits
 Wire Notes Line
 	475  3600 11225 3600
+Connection ~ 2500 1250
+Wire Wire Line
+	2500 1250 3375 1250
+Wire Wire Line
+	3375 1250 3375 1000
+Connection ~ 3375 1250
+Wire Wire Line
+	3375 1500 3375 1250
+$Comp
+L Switch:SW_Push SW203
+U 1 1 60B0F765
+P 3575 1500
+F 0 "SW203" H 3450 1825 50  0000 L CNN
+F 1 "SW_Push" H 3400 1725 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3575 1700 50  0001 C CNN
+F 3 "~" H 3575 1700 50  0001 C CNN
+	1    3575 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW204
+U 1 1 6012B10E
+P 3575 1000
+F 0 "SW204" H 3450 1300 50  0000 L CNN
+F 1 "SW_Push" H 3425 1200 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3575 1200 50  0001 C CNN
+F 3 "~" H 3575 1200 50  0001 C CNN
+	1    3575 1000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
