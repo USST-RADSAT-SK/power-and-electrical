@@ -16,13 +16,11 @@ $EndDescr
 Text Notes 7400 7500 0    50   ~ 0
 RADSAT-SK Timer Board Schematic
 Text Notes 8125 7650 0    50   ~ 0
-January 7, 2020
+October 25, 2021\n
 Text Notes 7000 7100 0    50   ~ 0
 CCP-ELEC-32-0998-RADSAT-SK_Timer_Schematic
-Text Notes 10475 7500 0    50   ~ 0
-Christopher Elash
-Text Notes 10600 7625 0    50   ~ 0
-B
+Text Notes 10475 7500 2    50   ~ 0
+Riley Nemetz
 $Comp
 L Device:R R103
 U 1 1 5FF8DF28
