@@ -171,12 +171,12 @@ U 1 1 600FFF1C
 P 5975 2125
 AR Path="/600FFF1C" Ref="Q201"  Part="1" 
 AR Path="/602E25D3/600FFF1C" Ref="Q201"  Part="1" 
-F 0 "Q201" H 5850 1925 50  0000 L CNN
-F 1 "IRLML2060" H 5625 2000 50  0000 L CNN
+F 0 "Q201" H 5850 2350 50  0000 L CNN
+F 1 "IRLML2060" H 5650 2275 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6175 2050 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 5975 2125 50  0001 L CNN
 	1    5975 2125
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Connection ~ 6675 2575
 Wire Wire Line
@@ -655,7 +655,7 @@ F 1 "IRLML2060" H 4700 4500 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5225 4625 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 5025 4700 50  0001 L CNN
 	1    5025 4700
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0118
@@ -744,7 +744,7 @@ F 1 "IRLML2060" H 6175 6450 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6700 6575 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 6500 6650 50  0001 L CNN
 	1    6500 6650
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -860,7 +860,7 @@ F 1 "IRLML2060" H 3275 6475 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3800 6600 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 3600 6675 50  0001 L CNN
 	1    3600 6675
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5150 6475 5150 6300
@@ -912,7 +912,7 @@ F 1 "IRLML2060" H 4725 6475 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5250 6600 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 5050 6675 50  0001 L CNN
 	1    5050 6675
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R213

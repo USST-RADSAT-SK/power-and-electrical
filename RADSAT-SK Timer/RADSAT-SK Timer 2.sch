@@ -747,10 +747,10 @@ F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0119
 U 1 1 6182F8D4
 P 6600 7250
-F 0 "#PWR?" H 6600 7000 50  0001 C CNN
+F 0 "#PWR0119" H 6600 7000 50  0001 C CNN
 F 1 "GND" H 6605 7077 50  0000 C CNN
 F 2 "" H 6600 7250 50  0001 C CNN
 F 3 "" H 6600 7250 50  0001 C CNN
@@ -839,10 +839,10 @@ F 3 "http://www.ixysic.com/home/pdfs.nsf/www/CPC1117N.pdf/$file/CPC1117N.pdf" H 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0120
 U 1 1 6183DF37
 P 3700 7275
-F 0 "#PWR?" H 3700 7025 50  0001 C CNN
+F 0 "#PWR0120" H 3700 7025 50  0001 C CNN
 F 1 "GND" H 3705 7102 50  0000 C CNN
 F 2 "" H 3700 7275 50  0001 C CNN
 F 3 "" H 3700 7275 50  0001 C CNN
@@ -891,10 +891,10 @@ $EndComp
 Wire Wire Line
 	4775 6675 4850 6675
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0121
 U 1 1 6181C5BF
 P 5150 7275
-F 0 "#PWR?" H 5150 7025 50  0001 C CNN
+F 0 "#PWR0121" H 5150 7025 50  0001 C CNN
 F 1 "GND" H 5155 7102 50  0000 C CNN
 F 2 "" H 5150 7275 50  0001 C CNN
 F 3 "" H 5150 7275 50  0001 C CNN
@@ -965,7 +965,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 4425 4400 4125
 Wire Wire Line
-	4400 4125 5125 4125
+	4400 4125 4500 4125
 Wire Wire Line
 	4050 4425 4400 4425
 Connection ~ 5125 4125
@@ -1153,4 +1153,18 @@ F 3 "~" H 3575 1200 50  0001 C CNN
 $EndComp
 Text Notes 8125 7650 0    50   ~ 0
 October 25 2021
+$Comp
+L Connector:TestPoint TP1
+U 1 1 617A6F6B
+P 4500 4125
+F 0 "TP1" H 4558 4243 50  0000 L CNN
+F 1 "TestPoint" H 4558 4152 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4700 4125 50  0001 C CNN
+F 3 "~" H 4700 4125 50  0001 C CNN
+	1    4500 4125
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 4125
+Wire Wire Line
+	4500 4125 5125 4125
 $EndSCHEMATC
