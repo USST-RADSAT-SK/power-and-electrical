@@ -278,8 +278,8 @@ Wire Wire Line
 	8225 975  8625 975 
 Wire Wire Line
 	8225 1075 8625 1075
-Text GLabel 7425 1275 0    50   Input ~ 0
-BUS_EN
+Text GLabel 7950 1275 0    50   Input ~ 0
+Inhib_EN
 Wire Wire Line
 	9750 1325 9750 1275
 Wire Wire Line
@@ -363,7 +363,6 @@ Connection ~ 8625 2175
 Wire Wire Line
 	8050 2175 8425 2175
 Connection ~ 8425 2175
-Connection ~ 8050 1275
 Wire Wire Line
 	10775 775  10775 1400
 Wire Wire Line
@@ -1551,42 +1550,6 @@ Wire Wire Line
 NoConn ~ 10350 3525
 NoConn ~ 10350 4225
 NoConn ~ 10350 4125
-$Comp
-L Device:LED D101
-U 1 1 600FEA55
-P 7600 1550
-F 0 "D101" V 7639 1432 50  0000 R CNN
-F 1 "LED" V 7548 1432 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7600 1550 50  0001 C CNN
-F 3 "~" H 7600 1550 50  0001 C CNN
-	1    7600 1550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R138
-U 1 1 60100324
-P 7600 1950
-F 0 "R138" H 7670 1996 50  0000 L CNN
-F 1 "1k" H 7670 1905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7530 1950 50  0001 C CNN
-F 3 "~" H 7600 1950 50  0001 C CNN
-	1    7600 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 1700 7600 1800
-Wire Wire Line
-	7600 1400 7600 1275
-Wire Wire Line
-	7600 1275 8050 1275
-Wire Wire Line
-	7600 1275 7425 1275
-Connection ~ 7600 1275
-Wire Wire Line
-	7600 2100 7600 2175
-Wire Wire Line
-	7600 2175 8050 2175
-Connection ~ 8050 2175
 Wire Wire Line
 	2100 2850 2875 2850
 Wire Wire Line
@@ -1639,4 +1602,7 @@ F 3 "" H 8975 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8375 4150 8800 4150
+Connection ~ 8050 1275
+Wire Wire Line
+	7950 1275 8050 1275
 $EndSCHEMATC
