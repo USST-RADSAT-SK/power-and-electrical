@@ -366,8 +366,6 @@ $EndComp
 Wire Wire Line
 	4625 1500 4625 1250
 Wire Wire Line
-	4050 1500 4050 1250
-Wire Wire Line
 	2175 3000 2450 3000
 Connection ~ 2450 3000
 Wire Wire Line
@@ -377,7 +375,6 @@ Wire Wire Line
 Connection ~ 2475 1675
 Wire Wire Line
 	2475 1675 2850 1675
-Connection ~ 4050 1250
 Wire Wire Line
 	4050 1250 4050 1000
 Connection ~ 4625 1250
@@ -651,7 +648,7 @@ U 1 1 615188F9
 P 4975 4425
 F 0 "J203" H 5055 4417 50  0000 L CNN
 F 1 "Conn_01x03" H 5055 4326 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-03P-1.25DSA_1x03_P1.25mm_Vertical" H 4975 4425 50  0001 C CNN
+F 2 "Connector_Hirose:Hirose_DF13C_CL535-0403-5-51_1x03-1MP_P1.25mm_Vertical" H 4975 4425 50  0001 C CNN
 F 3 "~" H 4975 4425 50  0001 C CNN
 	1    4975 4425
 	1    0    0    -1  
@@ -1029,8 +1026,6 @@ $EndComp
 Wire Notes Line
 	2125 5975 475  5975
 Wire Wire Line
-	4050 1250 4625 1250
-Wire Wire Line
 	1600 2275 1600 2150
 Connection ~ 1600 2150
 Wire Wire Line
@@ -1058,17 +1053,6 @@ Wire Wire Line
 Connection ~ 3650 1250
 Wire Wire Line
 	3650 1500 3650 1250
-$Comp
-L Switch:SW_Push SW203
-U 1 1 60B0F765
-P 3850 1500
-F 0 "SW203" H 3725 1825 50  0000 L CNN
-F 1 "SW_Push" H 3675 1725 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3850 1700 50  0001 C CNN
-F 3 "~" H 3850 1700 50  0001 C CNN
-	1    3850 1500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW204
 U 1 1 6012B10E
@@ -1220,4 +1204,20 @@ F 3 "" H 3725 5075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4175 4475 4175 4775
+Connection ~ 4050 1250
+Wire Wire Line
+	4050 1250 4625 1250
+$Comp
+L Switch:SW_Push SW203
+U 1 1 60B0F765
+P 3850 1500
+F 0 "SW203" H 3725 1825 50  0000 L CNN
+F 1 "SW_Push" H 3675 1725 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3850 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1500 4050 1250
 $EndSCHEMATC
