@@ -316,7 +316,7 @@ Wire Wire Line
 Text Notes 10450 7500 0    50   ~ 0
 Riley Nemetz
 Text Notes 700  700  0    50   ~ 0
-Battery Boost, Case Switches and RBF
+Battery Boost, Mechanical Switches and RBF Connection
 Text GLabel 2525 6275 0    50   Input ~ 0
 Inhib_EN
 $Comp

@@ -14,50 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Battery_Cell BT202
-U 1 1 600CC811
-P 2850 1575
-F 0 "BT202" H 2968 1671 50  0000 L CNN
-F 1 "Battery_Cell" H 2968 1580 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 2850 1635 50  0001 C CNN
-F 3 "~" V 2850 1635 50  0001 C CNN
-	1    2850 1575
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Battery_Cell BT201
-U 1 1 600C995D
-P 2125 1575
-F 0 "BT201" H 2243 1671 50  0000 L CNN
-F 1 "Battery_Cell" H 2243 1580 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 2125 1635 50  0001 C CNN
-F 3 "~" V 2125 1635 50  0001 C CNN
-	1    2125 1575
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW206
-U 1 1 600CE5B9
-P 2675 2800
-F 0 "SW206" V 2750 2500 50  0000 L CNN
-F 1 "SW_Push" V 2650 2450 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 2675 3000 50  0001 C CNN
-F 3 "~" H 2675 3000 50  0001 C CNN
-	1    2675 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0204
-U 1 1 600EB498
-P 2450 3150
-F 0 "#PWR0204" H 2450 2900 50  0001 C CNN
-F 1 "GND" H 2455 2977 50  0000 C CNN
-F 2 "" H 2450 3150 50  0001 C CNN
-F 3 "" H 2450 3150 50  0001 C CNN
-	1    2450 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L LTC3440EMSPBF:LTC3440EMSPBF U202
 U 1 1 6019F249
 P 7525 1900
@@ -306,17 +262,10 @@ F 3 "" H 9675 1225 50  0001 C CNN
 	1    9675 1225
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2125 1375 2500 1375
-Wire Wire Line
-	2450 3000 2450 3150
-Connection ~ 2500 1375
-Wire Wire Line
-	2500 1375 2850 1375
 Text Notes 10450 7500 0    50   ~ 0
 Riley Nemetz
 Text Notes 700  700  0    50   ~ 0
-Battery Boost, Case Switches and RBF
+Battery Boost, Mechanical Switches and RBF Connection with 5vCharge
 Text GLabel 2525 6275 0    50   Input ~ 0
 Inhib_EN
 $Comp
@@ -352,43 +301,8 @@ F 3 "~" H 4825 1700 50  0001 C CNN
 	1    4825 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW205
-U 1 1 60B0FAAF
-P 2175 2800
-F 0 "SW205" V 2225 2975 50  0000 L CNN
-F 1 "SW_Push" V 2100 2925 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 2175 3000 50  0001 C CNN
-F 3 "~" H 2175 3000 50  0001 C CNN
-	1    2175 2800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4625 1500 4625 1250
-Wire Wire Line
-	2175 3000 2450 3000
-Connection ~ 2450 3000
-Wire Wire Line
-	2450 3000 2675 3000
-Wire Wire Line
-	2125 1675 2475 1675
-Connection ~ 2475 1675
-Wire Wire Line
-	2475 1675 2850 1675
-Wire Wire Line
-	4050 1250 4050 1000
-Connection ~ 4625 1250
-Wire Wire Line
-	4625 1250 4625 1000
-Wire Wire Line
-	2175 2600 2475 2600
 Wire Wire Line
 	5425 1250 5425 1650
-Wire Wire Line
-	2475 1675 2475 1950
-Connection ~ 2475 2600
-Wire Wire Line
-	2475 2600 2675 2600
 $Comp
 L Connector_Generic:Conn_01x02 J206
 U 1 1 615175F5
@@ -403,96 +317,14 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x05 J202
 U 1 1 6151A0C4
-P 750 2050
-F 0 "J202" H 668 1625 50  0000 C CNN
-F 1 "Conn_01x05" H 668 1716 50  0000 C CNN
-F 2 "Connector_Hirose:Hirose_DF13-05P-1.25DSA_1x05_P1.25mm_Vertical" H 750 2050 50  0001 C CNN
-F 3 "~" H 750 2050 50  0001 C CNN
-	1    750  2050
+P 1150 1450
+F 0 "J202" H 1068 1025 50  0000 C CNN
+F 1 "Conn_01x05" H 1068 1116 50  0000 C CNN
+F 2 "Connector_Hirose:Hirose_DF13-05P-1.25DSA_1x05_P1.25mm_Vertical" H 1150 1450 50  0001 C CNN
+F 3 "~" H 1150 1450 50  0001 C CNN
+	1    1150 1450
 	-1   0    0    1   
 $EndComp
-$Comp
-L Transistor_FET:IRLML2060 Q?
-U 1 1 6156AA9A
-P 2375 2150
-AR Path="/6156AA9A" Ref="Q?"  Part="1" 
-AR Path="/602E25D3/6156AA9A" Ref="Q202"  Part="1" 
-F 0 "Q202" H 2150 2050 50  0000 L CNN
-F 1 "IRLML2060" H 2050 1950 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2575 2075 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 2375 2150 50  0001 L CNN
-	1    2375 2150
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2475 2350 2475 2600
-$Comp
-L Device:R R202
-U 1 1 61579880
-P 1800 2150
-F 0 "R202" V 1593 2150 50  0000 C CNN
-F 1 "100" V 1684 2150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1730 2150 50  0001 C CNN
-F 3 "~" H 1800 2150 50  0001 C CNN
-	1    1800 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R201
-U 1 1 6157AAE3
-P 1250 2425
-F 0 "R201" H 1320 2471 50  0000 L CNN
-F 1 "3M" H 1320 2380 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1180 2425 50  0001 C CNN
-F 3 "~" H 1250 2425 50  0001 C CNN
-	1    1250 2425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 2150 2175 2150
-Wire Wire Line
-	1650 2150 1600 2150
-Wire Wire Line
-	1250 2150 1250 2275
-Wire Wire Line
-	1600 2575 1425 2575
-Connection ~ 1425 2575
-Wire Wire Line
-	1425 2575 1250 2575
-$Comp
-L power:GND #PWR0108
-U 1 1 61592A30
-P 1425 2750
-F 0 "#PWR0108" H 1425 2500 50  0001 C CNN
-F 1 "GND" H 1430 2577 50  0000 C CNN
-F 2 "" H 1425 2750 50  0001 C CNN
-F 3 "" H 1425 2750 50  0001 C CNN
-	1    1425 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1425 2575 1425 2750
-Wire Wire Line
-	950  2050 1075 2050
-Wire Wire Line
-	1075 2050 1075 2150
-Wire Wire Line
-	1075 2250 950  2250
-Wire Wire Line
-	950  2150 1075 2150
-Connection ~ 1075 2150
-Wire Wire Line
-	1075 2150 1075 2250
-Wire Wire Line
-	2500 1250 1250 1250
-Wire Wire Line
-	2500 1250 2500 1375
-Wire Wire Line
-	950  1950 1075 1950
-Wire Wire Line
-	1075 1950 1075 1850
-Wire Wire Line
-	1075 1850 950  1850
 $Comp
 L power:+BATT #PWR0116
 U 1 1 6152A0B5
@@ -916,45 +748,19 @@ Wire Wire Line
 	3700 6100 3700 5775
 Wire Wire Line
 	3700 5700 5150 5700
-NoConn ~ 1150 5475
-NoConn ~ 1150 5275
-NoConn ~ 1150 5375
-Text GLabel 1375 5175 2    50   Input ~ 0
-USB_Charge
 $Comp
 L power:GND #PWR0106
 U 1 1 61514573
-P 1300 5700
-F 0 "#PWR0106" H 1300 5450 50  0001 C CNN
-F 1 "GND" H 1305 5527 50  0000 C CNN
-F 2 "" H 1300 5700 50  0001 C CNN
-F 3 "" H 1300 5700 50  0001 C CNN
-	1    1300 5700
+P 1575 1675
+F 0 "#PWR0106" H 1575 1425 50  0001 C CNN
+F 1 "GND" H 1580 1502 50  0000 C CNN
+F 2 "" H 1575 1675 50  0001 C CNN
+F 3 "" H 1575 1675 50  0001 C CNN
+	1    1575 1675
 	1    0    0    -1  
 $EndComp
-Text Notes 500  4800 0    50   ~ 0
-USB Charger for Battery
 Text Notes 2300 3750 0    50   ~ 0
 RBF Logic for Batt Board
-$Comp
-L CONN_ZX62WRD-B-5PC_HIR:ZX62WRD-B-5PC J210
-U 1 1 6159DCFD
-P 1150 5175
-AR Path="/6159DCFD" Ref="J210"  Part="1" 
-AR Path="/602E25D3/6159DCFD" Ref="J210"  Part="1" 
-F 0 "J210" H 1392 5462 60  0000 C CNN
-F 1 "ZX62WRD-B-5PC" H 1392 5356 60  0000 C CNN
-F 2 "CONN_ZX62WRD-B-5PC_HIR:CONN_ZX62WRD-B-5PC_HIR" H 1550 4915 60  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/hirose-electric-co-ltd/ZX62WRD-B-5PC/3761053" H 1150 5175 60  0001 C CNN
-	1    1150 5175
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 5175 1375 5175
-Wire Wire Line
-	1150 5575 1300 5575
-Wire Wire Line
-	1300 5575 1300 5700
 Wire Notes Line
 	2125 4675 475  4675
 Text Notes 475  6125 0    50   ~ 0
@@ -1025,19 +831,6 @@ F 3 "" H 1175 7325 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	2125 5975 475  5975
-Wire Wire Line
-	1600 2275 1600 2150
-Connection ~ 1600 2150
-Wire Wire Line
-	1600 2150 1250 2150
-Wire Wire Line
-	1075 2150 1250 2150
-Connection ~ 1250 2150
-Wire Wire Line
-	1075 1850 1250 1850
-Wire Wire Line
-	1250 1850 1250 1250
-Connection ~ 1075 1850
 Wire Notes Line
 	7975 3650 7975 6575
 Wire Notes Line
@@ -1049,34 +842,23 @@ Enable Logic for Relay Inhibits
 Wire Notes Line
 	475  3600 11225 3600
 Wire Wire Line
-	3650 1250 3650 1000
-Connection ~ 3650 1250
+	4025 1250 4025 1000
+Connection ~ 4025 1250
 Wire Wire Line
-	3650 1500 3650 1250
+	4025 1500 4025 1250
 $Comp
 L Switch:SW_Push SW204
 U 1 1 6012B10E
-P 3850 1000
-F 0 "SW204" H 3725 1300 50  0000 L CNN
-F 1 "SW_Push" H 3700 1200 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3850 1200 50  0001 C CNN
-F 3 "~" H 3850 1200 50  0001 C CNN
-	1    3850 1000
+P 4225 1000
+F 0 "SW204" H 4100 1300 50  0000 L CNN
+F 1 "SW_Push" H 4075 1200 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4225 1200 50  0001 C CNN
+F 3 "~" H 4225 1200 50  0001 C CNN
+	1    4225 1000
 	1    0    0    -1  
 $EndComp
 Text Notes 8125 7650 0    50   ~ 0
 October 25 2021
-$Comp
-L Diode:SM6T6V8A D201
-U 1 1 617B20AB
-P 1600 2425
-F 0 "D201" V 1554 2505 50  0000 L CNN
-F 1 "5.0SMDJ5.0A" V 1645 2505 50  0000 L CNN
-F 2 "Diode_SMD:D_SMC_Handsoldering" H 1600 2225 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/product-datasheets/5-0smdj.pdf" H 1550 2425 50  0001 C CNN
-	1    1600 2425
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5425 1250 5025 1250
 Wire Wire Line
@@ -1084,9 +866,6 @@ Wire Wire Line
 Connection ~ 5025 1250
 Wire Wire Line
 	5025 1250 5025 1500
-Wire Wire Line
-	2500 1250 3650 1250
-Connection ~ 2500 1250
 $Comp
 L BAT54CDW:BAT54CDW D204
 U 4 1 617DE62D
@@ -1204,20 +983,195 @@ F 3 "" H 3725 5075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4175 4475 4175 4775
-Connection ~ 4050 1250
-Wire Wire Line
-	4050 1250 4625 1250
 $Comp
 L Switch:SW_Push SW203
 U 1 1 60B0F765
-P 3850 1500
-F 0 "SW203" H 3725 1825 50  0000 L CNN
-F 1 "SW_Push" H 3675 1725 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3850 1700 50  0001 C CNN
-F 3 "~" H 3850 1700 50  0001 C CNN
-	1    3850 1500
+P 4225 1500
+F 0 "SW203" H 4100 1825 50  0000 L CNN
+F 1 "SW_Push" H 4050 1725 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 4225 1700 50  0001 C CNN
+F 3 "~" H 4225 1700 50  0001 C CNN
+	1    4225 1500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 1350
+Wire Wire Line
+	4425 1000 4425 1500
+Wire Wire Line
+	4625 1000 4625 1500
+$Comp
+L Diode:SM6T6V8A D201
+U 1 1 617B20AB
+P 2175 2425
+F 0 "D201" V 2129 2505 50  0000 L CNN
+F 1 "5.0SMDJ5.0A" V 2220 2505 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC_Handsoldering" H 2175 2225 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/product-datasheets/5-0smdj.pdf" H 2125 2425 50  0001 C CNN
+	1    2175 2425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2175 2150 1825 2150
+Connection ~ 2175 2150
+Wire Wire Line
+	2175 2275 2175 2150
+Text GLabel 1600 1550 2    50   Input ~ 0
+USB_Charge
+Wire Wire Line
+	3075 1250 3075 1375
+Wire Wire Line
+	2000 2575 2000 2750
+$Comp
+L power:GND #PWR0108
+U 1 1 61592A30
+P 2000 2750
+F 0 "#PWR0108" H 2000 2500 50  0001 C CNN
+F 1 "GND" H 2005 2577 50  0000 C CNN
+F 2 "" H 2000 2750 50  0001 C CNN
+F 3 "" H 2000 2750 50  0001 C CNN
+	1    2000 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 1500 4050 1250
+	2000 2575 1825 2575
+Connection ~ 2000 2575
+Wire Wire Line
+	2175 2575 2000 2575
+Wire Wire Line
+	1825 2150 1825 2275
+Wire Wire Line
+	2225 2150 2175 2150
+$Comp
+L Device:R R201
+U 1 1 6157AAE3
+P 1825 2425
+F 0 "R201" H 1895 2471 50  0000 L CNN
+F 1 "3M" H 1895 2380 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1755 2425 50  0001 C CNN
+F 3 "~" H 1825 2425 50  0001 C CNN
+	1    1825 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRLML2060 Q?
+U 1 1 6156AA9A
+P 2950 2150
+AR Path="/6156AA9A" Ref="Q?"  Part="1" 
+AR Path="/602E25D3/6156AA9A" Ref="Q202"  Part="1" 
+F 0 "Q202" H 2725 2050 50  0000 L CNN
+F 1 "IRLML2060" H 2625 1950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3150 2075 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 2950 2150 50  0001 L CNN
+	1    2950 2150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3050 1675 3050 1950
+Wire Wire Line
+	3050 1675 3425 1675
+Connection ~ 3050 1675
+Wire Wire Line
+	2700 1675 3050 1675
+$Comp
+L Switch:SW_Push SW205
+U 1 1 60B0FAAF
+P 2750 2800
+F 0 "SW205" V 2800 2975 50  0000 L CNN
+F 1 "SW_Push" V 2675 2925 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 2750 3000 50  0001 C CNN
+F 3 "~" H 2750 3000 50  0001 C CNN
+	1    2750 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3075 1375 3425 1375
+Connection ~ 3075 1375
+Wire Wire Line
+	2700 1375 3075 1375
+$Comp
+L Device:Battery_Cell BT201
+U 1 1 600C995D
+P 2700 1575
+F 0 "BT201" H 2818 1671 50  0000 L CNN
+F 1 "Battery_Cell" H 2818 1580 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 2700 1635 50  0001 C CNN
+F 3 "~" V 2700 1635 50  0001 C CNN
+	1    2700 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT202
+U 1 1 600CC811
+P 3425 1575
+F 0 "BT202" H 3543 1671 50  0000 L CNN
+F 1 "Battery_Cell" H 3543 1580 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 3425 1635 50  0001 C CNN
+F 3 "~" V 3425 1635 50  0001 C CNN
+	1    3425 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R202
+U 1 1 61579880
+P 2375 2150
+F 0 "R202" V 2168 2150 50  0000 C CNN
+F 1 "100" V 2259 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2305 2150 50  0001 C CNN
+F 3 "~" H 2375 2150 50  0001 C CNN
+	1    2375 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2525 2150 2750 2150
+$Comp
+L Switch:SW_Push SW206
+U 1 1 600CE5B9
+P 3250 2800
+F 0 "SW206" V 3325 2500 50  0000 L CNN
+F 1 "SW_Push" V 3225 2450 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical" H 3250 3000 50  0001 C CNN
+F 3 "~" H 3250 3000 50  0001 C CNN
+	1    3250 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 2600 3050 2600
+Connection ~ 3050 2600
+Wire Wire Line
+	3050 2600 3250 2600
+Wire Wire Line
+	3050 2350 3050 2600
+Wire Wire Line
+	3025 3000 3250 3000
+Connection ~ 3025 3000
+Wire Wire Line
+	2750 3000 3025 3000
+Wire Wire Line
+	3025 3000 3025 3150
+$Comp
+L power:GND #PWR0204
+U 1 1 600EB498
+P 3025 3150
+F 0 "#PWR0204" H 3025 2900 50  0001 C CNN
+F 1 "GND" H 3030 2977 50  0000 C CNN
+F 2 "" H 3025 3150 50  0001 C CNN
+F 3 "" H 3025 3150 50  0001 C CNN
+	1    3025 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 1250 4025 1250
+Wire Wire Line
+	1350 1250 3075 1250
+Connection ~ 3075 1250
+Wire Wire Line
+	2175 2150 2175 1450
+Wire Wire Line
+	1350 1450 2175 1450
+Wire Wire Line
+	1350 1650 1575 1650
+Wire Wire Line
+	1575 1650 1575 1675
+Wire Wire Line
+	1350 1550 1600 1550
 $EndSCHEMATC
