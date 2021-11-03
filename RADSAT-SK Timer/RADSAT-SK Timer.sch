@@ -88,94 +88,17 @@ F 3 "~" H 2875 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2875 1525 2875 1225
-$Comp
-L Device:R R107
-U 1 1 5FFA4850
-P 3250 1775
-F 0 "R107" H 3320 1821 50  0000 L CNN
-F 1 "1M" H 3320 1730 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 1775 50  0001 C CNN
-F 3 "~" H 3250 1775 50  0001 C CNN
-	1    3250 1775
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R106
-U 1 1 5FFA66B7
-P 3250 900
-F 0 "R106" H 3320 946 50  0000 L CNN
-F 1 "442K" H 3320 855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 900 50  0001 C CNN
-F 3 "~" H 3250 900 50  0001 C CNN
-	1    3250 900 
-	1    0    0    -1  
-$EndComp
 Connection ~ 2875 2225
 Connection ~ 3250 2225
 Wire Wire Line
 	3250 2225 2875 2225
-Wire Wire Line
-	3250 2225 3675 2225
-$Comp
-L Device:C C103
-U 1 1 5FFAAC43
-P 3675 1775
-F 0 "C103" H 3790 1821 50  0000 L CNN
-F 1 "100n" H 3790 1730 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3713 1625 50  0001 C CNN
-F 3 "~" H 3675 1775 50  0001 C CNN
-	1    3675 1775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3675 2225 3675 1925
 Wire Wire Line
 	1900 1325 1900 1225
 Wire Wire Line
 	2875 1225 2875 1050
 Connection ~ 2875 1225
 Wire Wire Line
-	3250 1050 3250 1300
-Wire Wire Line
-	3250 1300 3675 1300
-Wire Wire Line
-	3675 1300 3675 1625
-Wire Wire Line
-	3250 1925 3250 2225
-Wire Wire Line
-	3250 1300 3250 1625
-Connection ~ 3250 1300
-$Comp
-L Device:R R109
-U 1 1 5FFB8A69
-P 4325 1125
-F 0 "R109" V 4118 1125 50  0000 C CNN
-F 1 "1k" V 4209 1125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4255 1125 50  0001 C CNN
-F 3 "~" H 4325 1125 50  0001 C CNN
-	1    4325 1125
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R110
-U 1 1 5FFB9853
-P 4475 1275
-F 0 "R110" V 4475 1275 50  0000 C CNN
-F 1 "1k" V 4400 1325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4405 1275 50  0001 C CNN
-F 3 "~" H 4475 1275 50  0001 C CNN
-	1    4475 1275
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2875 1225 3575 1225
-Connection ~ 3675 2225
-Wire Wire Line
-	3250 750  2875 750 
-Connection ~ 3250 750 
-Wire Wire Line
 	1300 750  1300 875 
-Connection ~ 2875 750 
 Wire Wire Line
 	1300 750  600  750 
 Connection ~ 1300 750 
@@ -184,68 +107,6 @@ Wire Wire Line
 Connection ~ 1900 2225
 Wire Wire Line
 	1900 2225 2475 2225
-Wire Wire Line
-	4200 2075 4200 2225
-Connection ~ 4200 2225
-Wire Wire Line
-	4200 2225 3675 2225
-$Comp
-L Device:R R108
-U 1 1 5FFC7CAB
-P 4200 1475
-F 0 "R108" H 4130 1429 50  0000 R CNN
-F 1 "1k" H 4130 1520 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4130 1475 50  0001 C CNN
-F 3 "~" H 4200 1475 50  0001 C CNN
-	1    4200 1475
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4200 1325 4200 1275
-Wire Wire Line
-	4200 1625 4200 1675
-$Comp
-L Device:R R111
-U 1 1 5FFC9E88
-P 4750 1875
-F 0 "R111" V 4543 1875 50  0000 C CNN
-F 1 "100" V 4634 1875 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4680 1875 50  0001 C CNN
-F 3 "~" H 4750 1875 50  0001 C CNN
-	1    4750 1875
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4600 1875 4500 1875
-Wire Wire Line
-	3675 1275 3675 1300
-Wire Wire Line
-	3675 1275 4200 1275
-Connection ~ 3675 1300
-$Comp
-L Device:C C104
-U 1 1 5FFCFD1B
-P 6375 2025
-F 0 "C104" H 6490 2071 50  0000 L CNN
-F 1 "100n" H 6490 1980 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6413 1875 50  0001 C CNN
-F 3 "~" H 6375 2025 50  0001 C CNN
-	1    6375 2025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R112
-U 1 1 5FFD736A
-P 6375 950
-F 0 "R112" H 6305 904 50  0000 R CNN
-F 1 "1k" H 6305 995 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6305 950 50  0001 C CNN
-F 3 "~" H 6375 950 50  0001 C CNN
-	1    6375 950 
-	-1   0    0    1   
-$EndComp
-Text GLabel 6450 1150 2    50   Input ~ 0
-Timer_A_out
 $Comp
 L power:GND #PWR0101
 U 1 1 5FF98138
@@ -372,8 +233,6 @@ Wire Wire Line
 Connection ~ 9625 2175
 Text Notes 525  675  0    79   ~ 0
 Timer A
-Text Notes 7075 625  0    79   ~ 0
-Voter
 Wire Wire Line
 	8050 1675 8050 2175
 Wire Wire Line
@@ -406,17 +265,6 @@ F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 2000 1450 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 1800 1525 50  0001 L CNN
 	1    1800 1525
 	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRLML2060 Q107
-U 1 1 600655A8
-P 4300 1875
-F 0 "Q107" H 4075 1800 50  0000 L CNN
-F 1 "IRLML2060" H 3975 1700 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4500 1800 50  0001 L CIN
-F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 4300 1875 50  0001 L CNN
-	1    4300 1875
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1300 2225 1900 2225
@@ -564,62 +412,8 @@ Wire Wire Line
 Connection ~ 600  1725
 Wire Wire Line
 	600  750  600  1725
-$Comp
-L LM397MF:LM397MF U101
-U 1 1 600CAF9B
-P 5525 1250
-F 0 "U101" H 5525 1450 50  0000 C CNN
-F 1 "LM397MF" H 5525 1275 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-5_HandSoldering" H 5525 1250 50  0001 L BNN
-F 3 "" H 5525 1250 50  0001 L BNN
-	1    5525 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 2225 6225 2225
-Wire Wire Line
-	6225 750  6225 950 
-Wire Wire Line
-	3250 750  6225 750 
-Wire Wire Line
-	6225 750  6375 750 
-Wire Wire Line
-	6375 750  6375 800 
-Connection ~ 6225 750 
-Wire Wire Line
-	6225 1150 6375 1150
-Wire Wire Line
-	6375 1150 6375 1100
-Connection ~ 6375 1150
-Wire Wire Line
-	6375 1150 6450 1150
-Wire Wire Line
-	6225 1550 6225 2225
-Wire Wire Line
-	6375 1875 6375 1150
-Wire Wire Line
-	4900 1875 6375 1875
-Connection ~ 6375 1875
 Wire Wire Line
 	6375 2175 6375 2225
-Wire Wire Line
-	6375 2225 6225 2225
-Connection ~ 6225 2225
-Wire Wire Line
-	4625 1275 4825 1275
-Wire Wire Line
-	4825 1275 4825 1250
-Wire Wire Line
-	4475 1125 4825 1125
-Wire Wire Line
-	4825 1125 4825 1150
-Wire Wire Line
-	4325 1275 4200 1275
-Connection ~ 4200 1275
-Wire Wire Line
-	4175 1125 3575 1125
-Wire Wire Line
-	3575 1125 3575 1225
 $Comp
 L Device:R R117
 U 1 1 6023BA87
@@ -1419,8 +1213,6 @@ Wire Notes Line
 Wire Notes Line
 	475  4600 7025 4600
 Wire Notes Line
-	7025 475  7025 6550
-Wire Notes Line
 	7025 2525 475  2525
 Wire Notes Line
 	7025 2400 11225 2400
@@ -1647,4 +1439,212 @@ Wire Wire Line
 Connection ~ 8550 4350
 Wire Wire Line
 	8550 4350 8800 4350
+Connection ~ 6225 2225
+Wire Wire Line
+	6375 2225 6225 2225
+Wire Wire Line
+	4200 2225 6225 2225
+Connection ~ 4200 2225
+Connection ~ 2875 750 
+Connection ~ 3675 2225
+Wire Wire Line
+	4200 2225 3675 2225
+Wire Wire Line
+	3250 2225 3675 2225
+Wire Notes Line
+	7025 475  7025 6550
+Wire Wire Line
+	3575 1125 3575 1225
+Wire Wire Line
+	4175 1125 3575 1125
+Connection ~ 4200 1275
+Wire Wire Line
+	4325 1275 4200 1275
+Wire Wire Line
+	4825 1125 4825 1150
+Wire Wire Line
+	4475 1125 4825 1125
+Wire Wire Line
+	4825 1275 4825 1250
+Wire Wire Line
+	4625 1275 4825 1275
+Connection ~ 6375 1875
+Wire Wire Line
+	4900 1875 6375 1875
+Wire Wire Line
+	6375 1875 6375 1150
+Wire Wire Line
+	6225 1550 6225 2225
+Wire Wire Line
+	6375 1150 6450 1150
+Connection ~ 6375 1150
+Wire Wire Line
+	6375 1150 6375 1100
+Wire Wire Line
+	6225 1150 6375 1150
+Connection ~ 6225 750 
+Wire Wire Line
+	6375 750  6375 800 
+Wire Wire Line
+	6225 750  6375 750 
+Wire Wire Line
+	3250 750  6225 750 
+Wire Wire Line
+	6225 750  6225 950 
+$Comp
+L LM397MF:LM397MF U101
+U 1 1 600CAF9B
+P 5525 1250
+F 0 "U101" H 5525 1450 50  0000 C CNN
+F 1 "LM397MF" H 5525 1275 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5_HandSoldering" H 5525 1250 50  0001 L BNN
+F 3 "" H 5525 1250 50  0001 L BNN
+	1    5525 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRLML2060 Q107
+U 1 1 600655A8
+P 4300 1875
+F 0 "Q107" H 4075 1800 50  0000 L CNN
+F 1 "IRLML2060" H 3975 1700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 4500 1800 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 4300 1875 50  0001 L CNN
+	1    4300 1875
+	-1   0    0    -1  
+$EndComp
+Text Notes 7075 625  0    79   ~ 0
+Voter
+Text GLabel 6450 1150 2    50   Input ~ 0
+Timer_A_out
+$Comp
+L Device:R R112
+U 1 1 5FFD736A
+P 6375 950
+F 0 "R112" H 6305 904 50  0000 R CNN
+F 1 "1k" H 6305 995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6305 950 50  0001 C CNN
+F 3 "~" H 6375 950 50  0001 C CNN
+	1    6375 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C104
+U 1 1 5FFCFD1B
+P 6375 2025
+F 0 "C104" H 6490 2071 50  0000 L CNN
+F 1 "100n" H 6490 1980 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6413 1875 50  0001 C CNN
+F 3 "~" H 6375 2025 50  0001 C CNN
+	1    6375 2025
+	1    0    0    -1  
+$EndComp
+Connection ~ 3675 1300
+Wire Wire Line
+	3675 1275 4200 1275
+Wire Wire Line
+	3675 1275 3675 1300
+Wire Wire Line
+	4600 1875 4500 1875
+$Comp
+L Device:R R111
+U 1 1 5FFC9E88
+P 4750 1875
+F 0 "R111" V 4543 1875 50  0000 C CNN
+F 1 "100" V 4634 1875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4680 1875 50  0001 C CNN
+F 3 "~" H 4750 1875 50  0001 C CNN
+	1    4750 1875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 1625 4200 1675
+Wire Wire Line
+	4200 1325 4200 1275
+$Comp
+L Device:R R108
+U 1 1 5FFC7CAB
+P 4200 1475
+F 0 "R108" H 4130 1429 50  0000 R CNN
+F 1 "1k" H 4130 1520 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4130 1475 50  0001 C CNN
+F 3 "~" H 4200 1475 50  0001 C CNN
+	1    4200 1475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 2075 4200 2225
+Connection ~ 3250 750 
+Wire Wire Line
+	3250 750  2875 750 
+Wire Wire Line
+	2875 1225 3575 1225
+$Comp
+L Device:R R110
+U 1 1 5FFB9853
+P 4475 1275
+F 0 "R110" V 4475 1275 50  0000 C CNN
+F 1 "1k" V 4400 1325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4405 1275 50  0001 C CNN
+F 3 "~" H 4475 1275 50  0001 C CNN
+	1    4475 1275
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R109
+U 1 1 5FFB8A69
+P 4325 1125
+F 0 "R109" V 4118 1125 50  0000 C CNN
+F 1 "1k" V 4209 1125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4255 1125 50  0001 C CNN
+F 3 "~" H 4325 1125 50  0001 C CNN
+	1    4325 1125
+	0    1    1    0   
+$EndComp
+Connection ~ 3250 1300
+Wire Wire Line
+	3250 1300 3250 1625
+Wire Wire Line
+	3250 1925 3250 2225
+Wire Wire Line
+	3675 1300 3675 1625
+Wire Wire Line
+	3250 1300 3675 1300
+Wire Wire Line
+	3250 1050 3250 1300
+Wire Wire Line
+	3675 2225 3675 1925
+$Comp
+L Device:C C103
+U 1 1 5FFAAC43
+P 3675 1775
+F 0 "C103" H 3790 1821 50  0000 L CNN
+F 1 "100n" H 3790 1730 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3713 1625 50  0001 C CNN
+F 3 "~" H 3675 1775 50  0001 C CNN
+	1    3675 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R106
+U 1 1 5FFA66B7
+P 3250 900
+F 0 "R106" H 3320 946 50  0000 L CNN
+F 1 "442K" H 3320 855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 900 50  0001 C CNN
+F 3 "~" H 3250 900 50  0001 C CNN
+	1    3250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R107
+U 1 1 5FFA4850
+P 3250 1775
+F 0 "R107" H 3320 1821 50  0000 L CNN
+F 1 "1M" H 3320 1730 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 1775 50  0001 C CNN
+F 3 "~" H 3250 1775 50  0001 C CNN
+	1    3250 1775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

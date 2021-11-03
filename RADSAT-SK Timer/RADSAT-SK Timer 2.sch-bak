@@ -826,9 +826,9 @@ F 3 "~" H 4225 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4425 1000 4425 1500
+	4425 1000 4425 1275
 Wire Wire Line
-	4625 1000 4625 1500
+	4625 1000 4625 1275
 Text GLabel 975  1450 2    50   Input ~ 0
 USB_Charge
 Wire Wire Line
@@ -1235,4 +1235,12 @@ F 3 "" H 2500 4175 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	2125 3600 2125 7800
+Wire Wire Line
+	4425 1275 4625 1275
+Connection ~ 4425 1275
+Wire Wire Line
+	4425 1275 4425 1500
+Connection ~ 4625 1275
+Wire Wire Line
+	4625 1275 4625 1500
 $EndSCHEMATC
