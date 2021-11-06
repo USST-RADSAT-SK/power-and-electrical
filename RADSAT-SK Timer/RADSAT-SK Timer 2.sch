@@ -1243,4 +1243,6 @@ Wire Wire Line
 Connection ~ 4625 1275
 Wire Wire Line
 	4625 1275 4625 1500
+Text Label 2925 6400 0    50   ~ 0
+Inhib_in
 $EndSCHEMATC
