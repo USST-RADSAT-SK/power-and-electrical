@@ -1,0 +1,12 @@
+(fp_lib_table
+  (lib (name CSKB)(type KiCad)(uri ${KIPRJMOD}/CSKB)(options "")(descr ""))
+  (lib (name IRLRML2803)(type KiCad)(uri ${KIPRJMOD}/IRLRML2803)(options "")(descr ""))
+  (lib (name LP29080)(type KiCad)(uri ${KIPRJMOD}/LP29080)(options "")(descr ""))
+  (lib (name LTC3440)(type KiCad)(uri ${KIPRJMOD}/LTC3440)(options "")(descr ""))
+  (lib (name RBF)(type KiCad)(uri ${KIPRJMOD}/RBF)(options "")(descr ""))
+  (lib (name TPS3700)(type KiCad)(uri ${KIPRJMOD}/TPS3700)(options "")(descr ""))
+  (lib (name LM397)(type KiCad)(uri ${KIPRJMOD}/LM397)(options "")(descr ""))
+  (lib (name CONN_ZX62WRD-B-5PC_HIR)(type KiCad)(uri ${KIPRJMOD}/USB-Hirose-ZX62WRD-B-5PC/CONN_ZX62WRD-B-5PC_HIR.pretty)(options "")(descr ""))
+  (lib (name USSTlogo)(type KiCad)(uri ${KIPRJMOD}/USSTlogo.pretty)(options "")(descr ""))
+  (lib (name Sumida_inductor)(type KiCad)(uri ${KIPRJMOD}/Sumida_inductor.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BAT54CDW
+D Schottky diode array 2 pair Com K
+K diode
+F https://www.panjit.com.tw/upload/datasheet/BAT54TW_SERIES.pdf
+$ENDCMP
+#
+#End Doc Library
