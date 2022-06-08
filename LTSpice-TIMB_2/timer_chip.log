@@ -1,0 +1,21 @@
+Circuit: * C:\Users\rylee\OneDrive\Desktop\git\power-and-electrical\LTSpice-TIMB_2\timer_chip.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Jun 07 21:51:54 2022
+Total elapsed time: 0.125 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 221
+traniter = 218
+tranpoints = 110
+accept = 110
+rejected = 0
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1: 50 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.0/0.0
+
