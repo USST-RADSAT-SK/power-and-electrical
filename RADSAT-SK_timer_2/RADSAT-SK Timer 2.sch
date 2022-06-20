@@ -434,50 +434,9 @@ Wire Wire Line
 	3100 6675 3100 7550
 Connection ~ 4475 7550
 Wire Wire Line
-	3100 6675 2925 6675
+	3100 6675 3025 6675
 Connection ~ 3100 6675
 Connection ~ 2925 6675
-$Comp
-L Device:LED D104
-U 1 1 618242EB
-P 2925 6825
-AR Path="/618242EB" Ref="D104"  Part="1" 
-AR Path="/602E25D3/618242EB" Ref="D205"  Part="1" 
-F 0 "D104" V 2950 7125 50  0000 R CNN
-F 1 "LED" V 2875 7075 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2925 6825 50  0001 C CNN
-F 3 "~" H 2925 6825 50  0001 C CNN
-	1    2925 6825
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R109
-U 1 1 618242F1
-P 2925 7225
-AR Path="/618242F1" Ref="R109"  Part="1" 
-AR Path="/602E25D3/618242F1" Ref="R217"  Part="1" 
-F 0 "R109" H 2650 7275 50  0000 L CNN
-F 1 "1k" H 2750 7175 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2855 7225 50  0001 C CNN
-F 3 "~" H 2925 7225 50  0001 C CNN
-	1    2925 7225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2925 6975 2925 7075
-Wire Wire Line
-	2925 7375 2925 7450
-$Comp
-L power:GND #PWR0122
-U 1 1 6182BF94
-P 2925 7450
-F 0 "#PWR0122" H 2925 7200 50  0001 C CNN
-F 1 "GND" H 2930 7277 50  0000 C CNN
-F 2 "" H 2925 7450 50  0001 C CNN
-F 3 "" H 2925 7450 50  0001 C CNN
-	1    2925 7450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW203
 U 1 1 60B0F765
@@ -496,17 +455,6 @@ Wire Wire Line
 Text Notes 1225 1200 0    50   ~ 0
 RBF IN: Short Pins 4, 2\nRBF OUT: Pins OPEN\nCHARGE PIN: PINS 1,3 OPEN, 5V Pin 1
 $Comp
-L power:GND #PWR0123
-U 1 1 618BB4CA
-P 1850 3825
-F 0 "#PWR0123" H 1850 3575 50  0001 C CNN
-F 1 "GND" H 1855 3652 50  0000 C CNN
-F 2 "" H 1850 3825 50  0001 C CNN
-F 3 "" H 1850 3825 50  0001 C CNN
-	1    1850 3825
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0118
 U 1 1 6177DA1C
 P 2300 3825
@@ -518,7 +466,7 @@ F 3 "" H 2300 3825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4425 1275 4625 1275
+	4425 1275 4525 1275
 Connection ~ 4425 1275
 Wire Wire Line
 	4425 1275 4425 1500
@@ -543,11 +491,6 @@ Wire Wire Line
 Connection ~ 3050 1675
 Wire Wire Line
 	3050 1675 3425 1675
-Wire Wire Line
-	2375 2500 2375 2250
-Connection ~ 2375 2500
-Wire Wire Line
-	2375 2750 2375 2500
 $Comp
 L Switch:SW_Push SW205
 U 1 1 62ACC594
@@ -573,7 +516,7 @@ $EndComp
 Wire Wire Line
 	2775 2250 2775 2525
 Wire Wire Line
-	2775 2525 2975 2525
+	2775 2525 2925 2525
 Connection ~ 2775 2525
 Wire Wire Line
 	2775 2525 2775 2750
@@ -593,7 +536,7 @@ USB_Charge
 Wire Wire Line
 	5025 1000 5025 1275
 Wire Wire Line
-	5025 1275 5500 1275
+	5025 1275 5175 1275
 Connection ~ 5025 1275
 Wire Wire Line
 	5025 1275 5025 1500
@@ -712,9 +655,9 @@ NoConn ~ 8350 3000
 NoConn ~ 8350 3100
 NoConn ~ 8850 3100
 Wire Wire Line
-	8000 2600 8350 2600
+	8000 2600 8175 2600
 Wire Wire Line
-	8000 2700 8350 2700
+	8000 2700 8175 2700
 NoConn ~ 6375 2725
 NoConn ~ 6375 2625
 $Comp
@@ -736,7 +679,7 @@ NoConn ~ 8850 1800
 Text GLabel 9025 2100 2    50   Input ~ 0
 USB_Charge
 Wire Wire Line
-	9025 2100 8850 2100
+	9025 2100 8950 2100
 $Comp
 L power:+5V #PWR0102
 U 1 1 62B5D070
@@ -794,9 +737,9 @@ Wire Wire Line
 Wire Wire Line
 	6375 1925 6000 1925
 Wire Wire Line
-	6875 1825 7025 1825
+	6875 1825 6975 1825
 Wire Wire Line
-	6875 1925 7200 1925
+	6875 1925 7125 1925
 $Comp
 L power:GND #PWR0108
 U 1 1 62B5D08C
@@ -898,9 +841,7 @@ F 3 "~" H 9225 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	7950 5425 11225 5425
-Wire Notes Line
-	11225 5425 11225 5225
+	11000 5400 11000 5200
 Wire Notes Line
 	7950 5425 7950 6525
 Text Notes 8075 5550 0    50   ~ 0
@@ -1043,44 +984,11 @@ Wire Wire Line
 Wire Wire Line
 	1375 2925 1375 3200
 Connection ~ 1375 2925
-$Comp
-L Device:LED D101
-U 1 1 618550E9
-P 1850 3275
-AR Path="/618550E9" Ref="D101"  Part="1" 
-AR Path="/602E25D3/618550E9" Ref="D206"  Part="1" 
-F 0 "D101" V 1875 3575 50  0000 R CNN
-F 1 "LED" V 1800 3525 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1850 3275 50  0001 C CNN
-F 3 "~" H 1850 3275 50  0001 C CNN
-	1    1850 3275
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R209
-U 1 1 61881131
-P 1850 3675
-F 0 "R209" V 2000 3700 50  0000 C CNN
-F 1 "1k" V 1925 3675 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1780 3675 50  0001 C CNN
-F 3 "~" H 1850 3675 50  0001 C CNN
-	1    1850 3675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 3425 1850 3525
 Wire Wire Line
 	1375 2925 1425 2925
 Connection ~ 1725 2925
 Wire Wire Line
-	1725 2925 1850 2925
-Wire Wire Line
-	1850 2925 2300 2925
-Wire Wire Line
 	2300 2925 2300 3025
-Connection ~ 1850 2925
-Wire Wire Line
-	1850 3125 1850 2925
 Wire Wire Line
 	2300 3225 2300 3525
 Wire Wire Line
@@ -1125,8 +1033,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 4375 5525 4375
 Connection ~ 4975 4375
-Wire Wire Line
-	4975 4375 5150 4375
 $Comp
 L Device:D_Schottky D?
 U 1 1 62C794F0
@@ -1364,9 +1270,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 3500 7625 3500
 Connection ~ 8975 4600
-Wire Wire Line
-	8975 4600 9200 4600
-Text GLabel 9200 4600 2    50   Input ~ 0
+Text GLabel 9200 4600 1    50   Input ~ 0
 CHRG_ON-OFF
 Connection ~ 8975 4400
 Wire Wire Line
@@ -1403,7 +1307,7 @@ Wire Wire Line
 	6650 4825 6650 4900
 Connection ~ 6650 4825
 Wire Wire Line
-	7050 4600 7350 4600
+	7050 4600 7175 4600
 Wire Wire Line
 	7050 4825 7050 4600
 Wire Wire Line
@@ -1417,8 +1321,6 @@ Wire Wire Line
 	6650 4450 6650 4400
 Wire Wire Line
 	6650 4400 6650 4275
-Wire Wire Line
-	7350 4400 6650 4400
 Wire Wire Line
 	7350 3500 7350 4200
 $Comp
@@ -1566,13 +1468,182 @@ $EndComp
 Text GLabel 5375 1275 1    50   Input ~ 0
 B
 Wire Wire Line
-	1100 2500 1100 1900
+	3050 1900 800  1900
 Wire Wire Line
-	1100 1900 800  1900
+	3050 1675 3050 1900
 Wire Wire Line
-	1100 2500 2375 2500
+	800  1700 2025 1700
 Wire Wire Line
-	3050 1675 3050 1700
+	2025 1700 2025 2525
 Wire Wire Line
-	800  1700 3050 1700
+	2025 2525 2375 2525
+Wire Wire Line
+	2375 2250 2375 2525
+Connection ~ 2375 2525
+Wire Wire Line
+	2375 2525 2375 2750
+Wire Wire Line
+	2025 2925 2025 3275
+Wire Wire Line
+	1725 2925 2025 2925
+Connection ~ 2025 2925
+Wire Wire Line
+	2025 2925 2300 2925
+Wire Wire Line
+	5025 4375 5025 4150
+Wire Wire Line
+	5025 4150 5050 4150
+Wire Wire Line
+	4975 4375 5025 4375
+Connection ~ 5025 4375
+Wire Wire Line
+	5025 4375 5150 4375
+Wire Wire Line
+	9025 4925 9000 4925
+Wire Notes Line
+	9800 3425 9800 5450
+Wire Notes Line
+	7950 5425 11225 5425
+Wire Wire Line
+	3025 6675 3025 7225
+Connection ~ 3025 6675
+Wire Wire Line
+	3025 6675 2925 6675
+Wire Wire Line
+	4525 1275 4525 850 
+Wire Wire Line
+	4525 850  4550 850 
+Connection ~ 4525 1275
+Wire Wire Line
+	4525 1275 4625 1275
+Wire Wire Line
+	5175 1275 5175 975 
+Connection ~ 5175 1275
+Wire Wire Line
+	5175 1275 5500 1275
+Wire Wire Line
+	2925 2525 2925 2250
+Connection ~ 2925 2525
+Wire Wire Line
+	2925 2525 2975 2525
+Wire Wire Line
+	3050 1900 3275 1900
+Connection ~ 3050 1900
+Wire Wire Line
+	6975 1825 6975 1525
+Connection ~ 6975 1825
+Wire Wire Line
+	6975 1825 7025 1825
+Wire Wire Line
+	7125 1925 7125 1975
+Wire Wire Line
+	7125 1975 7425 1975
+Connection ~ 7125 1925
+Wire Wire Line
+	7125 1925 7200 1925
+Wire Wire Line
+	8950 2100 8950 1925
+Connection ~ 8950 2100
+Wire Wire Line
+	8950 2100 8850 2100
+Wire Wire Line
+	8175 2600 8175 2350
+Connection ~ 8175 2600
+Wire Wire Line
+	8175 2600 8350 2600
+Wire Wire Line
+	8175 2700 8175 2900
+Connection ~ 8175 2700
+Wire Wire Line
+	8175 2700 8350 2700
+Wire Wire Line
+	7175 4400 7175 4125
+Wire Wire Line
+	6650 4400 7175 4400
+Connection ~ 7175 4400
+Wire Wire Line
+	7175 4400 7350 4400
+Wire Wire Line
+	7175 4600 7175 4800
+Connection ~ 7175 4600
+Wire Wire Line
+	7175 4600 7350 4600
+$Comp
+L Connector_Generic:Conn_01x15 J209
+U 1 1 62B14365
+P 10800 4450
+F 0 "J209" V 10900 4525 50  0000 L CNN
+F 1 "Conn_01x15" V 10975 4400 50  0000 L CNN
+F 2 "" H 10800 4450 50  0001 C CNN
+F 3 "~" H 10800 4450 50  0001 C CNN
+	1    10800 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3275 1900 2    50   Input ~ 0
+Test_negetive_Batt
+Text GLabel 10600 3750 0    50   Input ~ 0
+Test_negetive_Batt
+Text GLabel 2925 2250 2    50   Input ~ 0
+Test_GND
+Text GLabel 10600 3850 0    50   Input ~ 0
+Test_GND
+Text GLabel 4550 850  1    50   Input ~ 0
+Test_SW1
+Text GLabel 10600 3950 0    50   Input ~ 0
+Test_SW1
+Text GLabel 5175 975  2    50   Input ~ 0
+Test_SW2
+Text GLabel 10600 4050 0    50   Input ~ 0
+Test_SW2
+Text GLabel 2025 3275 3    50   Input ~ 0
+Test_InhibV+
+Text GLabel 10600 4150 0    50   Input ~ 0
+Test_InhibV+
+Text GLabel 7425 1975 2    50   Input ~ 0
+Test_CSKB_3V3
+Text GLabel 6975 1525 2    50   Input ~ 0
+Test_CSKB_5V
+Text GLabel 10600 4250 0    50   Input ~ 0
+Test_CSKB_3V3
+Text GLabel 10600 4350 0    50   Input ~ 0
+Test_CSKB_5V
+Text GLabel 9000 4925 2    50   Input ~ 0
+Test_CHRG_ON-OFF
+Text GLabel 10600 4450 0    50   Input ~ 0
+Test_CHRG_ON-OFF
+Text GLabel 8950 1925 2    50   Input ~ 0
+Test_USB_Charge
+Text GLabel 10600 4550 0    50   Input ~ 0
+Test_USB_Charge
+Text GLabel 5050 4150 0    50   Input ~ 0
+Test_Vreg
+Text GLabel 10600 4650 0    50   Input ~ 0
+Test_Vreg
+Text GLabel 7175 4125 1    50   Input ~ 0
+Test_INA+
+Text GLabel 7175 4800 3    50   Input ~ 0
+Test_INB-
+Text GLabel 10600 4750 0    50   Input ~ 0
+Test_INA+
+Text GLabel 10600 4850 0    50   Input ~ 0
+Test_INB-
+Text GLabel 3025 7225 0    50   Input ~ 0
+Test_Relay_Inhibs
+Text GLabel 10600 4950 0    50   Input ~ 0
+Test_Relay_Inhibs
+Text GLabel 8175 2350 0    50   Input ~ 0
+Test_I2C_DATA
+Text GLabel 8175 2900 0    50   Input ~ 0
+Test_I2C_CLK
+Text GLabel 10600 5050 0    50   Input ~ 0
+Test_I2C_DATA
+Text GLabel 10600 5150 0    50   Input ~ 0
+Test_I2C_CLK
+Wire Wire Line
+	8975 4600 9025 4600
+Wire Wire Line
+	9025 4600 9025 4925
+Connection ~ 9025 4600
+Wire Wire Line
+	9025 4600 9200 4600
 $EndSCHEMATC
