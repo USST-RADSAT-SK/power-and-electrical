@@ -1032,7 +1032,6 @@ Wire Wire Line
 	1975 4475 1775 4475
 Wire Wire Line
 	5450 4375 5525 4375
-Connection ~ 4975 4375
 $Comp
 L Device:D_Schottky D?
 U 1 1 62C794F0
@@ -1053,29 +1052,7 @@ Wire Wire Line
 Connection ~ 4000 4700
 Wire Wire Line
 	4000 4700 3575 4700
-Connection ~ 4500 5050
-Wire Wire Line
-	4975 5050 4500 5050
-Wire Wire Line
-	4975 5025 4975 5050
 Connection ~ 4500 4375
-Wire Wire Line
-	4500 4375 4975 4375
-Wire Wire Line
-	4975 4675 4975 4725
-$Comp
-L Device:LED D?
-U 1 1 62C79500
-P 4975 4525
-AR Path="/62B9869E/62C79500" Ref="D?"  Part="1" 
-AR Path="/62C79500" Ref="D103"  Part="1" 
-F 0 "D103" V 5014 4407 50  0000 R CNN
-F 1 "LED" V 4923 4407 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 4975 4525 50  0001 C CNN
-F 3 "~" H 4975 4525 50  0001 C CNN
-	1    4975 4525
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4000 5050 4275 5050
 Wire Wire Line
@@ -1147,19 +1124,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric" V 5605 4375 50  0001 C CNN
 F 3 "~" H 5675 4375 50  0001 C CNN
 	1    5675 4375
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 62C79529
-P 4975 4875
-AR Path="/62B9869E/62C79529" Ref="R?"  Part="1" 
-AR Path="/62C79529" Ref="R106"  Part="1" 
-F 0 "R106" H 5045 4921 50  0000 L CNN
-F 1 "1k" H 5045 4830 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4905 4875 50  0001 C CNN
-F 3 "~" H 4975 4875 50  0001 C CNN
-	1    4975 4875
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
@@ -1493,8 +1457,6 @@ Wire Wire Line
 	5025 4375 5025 4150
 Wire Wire Line
 	5025 4150 5050 4150
-Wire Wire Line
-	4975 4375 5025 4375
 Connection ~ 5025 4375
 Wire Wire Line
 	5025 4375 5150 4375
@@ -1646,4 +1608,6 @@ Wire Wire Line
 Connection ~ 9025 4600
 Wire Wire Line
 	9025 4600 9200 4600
+Wire Wire Line
+	4500 4375 5025 4375
 $EndSCHEMATC
