@@ -528,17 +528,6 @@ Wire Wire Line
 Text Label 2925 6400 0    50   ~ 0
 Inhib_in
 $Comp
-L Device:Battery_Cell BT203
-U 1 1 600CC811
-P 3425 1575
-F 0 "BT203" H 3543 1671 50  0000 L CNN
-F 1 "Battery_Cell" H 3543 1580 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 3425 1635 50  0001 C CNN
-F 3 "~" V 3425 1635 50  0001 C CNN
-	1    3425 1575
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Battery_Cell BT201
 U 1 1 600C995D
 P 2700 1575
@@ -551,8 +540,6 @@ F 3 "~" V 2700 1635 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 1675 3050 1675
-Wire Wire Line
-	3050 1800 3050 1675
 Connection ~ 3050 1675
 Wire Wire Line
 	3050 1675 3425 1675
@@ -919,30 +906,18 @@ Wire Notes Line
 Text Notes 8075 5550 0    50   ~ 0
 Mounting Holes\n
 Wire Wire Line
-	2400 1900 2400 1800
-Wire Wire Line
-	2400 1800 3050 1800
-Wire Wire Line
-	800  1900 2400 1900
-Wire Wire Line
 	800  1800 1525 1800
 Wire Wire Line
 	800  1600 1275 1600
 Wire Wire Line
 	800  1500 1300 1500
-Wire Wire Line
-	800  1700 1850 1700
-Wire Wire Line
-	1850 1700 1850 2500
-Wire Wire Line
-	1850 2500 2375 2500
 $Comp
 L Connector:Conn_01x05_Female J202
 U 1 1 62AFD4DB
 P 1000 1700
 F 0 "J202" H 1028 1726 50  0000 L CNN
 F 1 "Conn_01x05_Female" H 1028 1635 50  0000 L CNN
-F 2 "" H 1000 1700 50  0001 C CNN
+F 2 "Connector_Hirose:Hirose_DF13-05P-1.25DSA_1x05_P1.25mm_Vertical" H 1000 1700 50  0001 C CNN
 F 3 "~" H 1000 1700 50  0001 C CNN
 	1    1000 1700
 	1    0    0    -1  
@@ -969,8 +944,6 @@ Wire Wire Line
 	3050 1375 3425 1375
 Text GLabel 2700 1375 0    50   Input ~ 0
 A
-Text GLabel 3425 1375 2    50   Input ~ 0
-B
 Wire Wire Line
 	1625 2925 1725 2925
 $Comp
@@ -1579,4 +1552,27 @@ Wire Notes Line
 	450  4075 2500 4075
 Text Notes 5375 5125 0    50   ~ 0
 Battery Charging\n
+$Comp
+L Device:Battery_Cell BT203
+U 1 1 600CC811
+P 3425 1575
+F 0 "BT203" H 3543 1671 50  0000 L CNN
+F 1 "Battery_Cell" H 3543 1580 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 3425 1635 50  0001 C CNN
+F 3 "~" V 3425 1635 50  0001 C CNN
+	1    3425 1575
+	1    0    0    -1  
+$EndComp
+Text GLabel 5375 1275 1    50   Input ~ 0
+B
+Wire Wire Line
+	1100 2500 1100 1900
+Wire Wire Line
+	1100 1900 800  1900
+Wire Wire Line
+	1100 2500 2375 2500
+Wire Wire Line
+	3050 1675 3050 1700
+Wire Wire Line
+	800  1700 3050 1700
 $EndSCHEMATC
