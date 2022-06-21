@@ -433,8 +433,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 6675 3100 7550
 Connection ~ 4475 7550
-Wire Wire Line
-	3100 6675 3025 6675
 Connection ~ 3100 6675
 Connection ~ 2925 6675
 $Comp
@@ -1447,9 +1445,9 @@ Connection ~ 2375 2525
 Wire Wire Line
 	2375 2525 2375 2750
 Wire Wire Line
-	2025 2925 2025 3275
+	2025 2925 2025 3525
 Wire Wire Line
-	1725 2925 2025 2925
+	1725 2925 1850 2925
 Connection ~ 2025 2925
 Wire Wire Line
 	2025 2925 2300 2925
@@ -1466,11 +1464,6 @@ Wire Notes Line
 	9800 3425 9800 5450
 Wire Notes Line
 	7950 5425 11225 5425
-Wire Wire Line
-	3025 6675 3025 7225
-Connection ~ 3025 6675
-Wire Wire Line
-	3025 6675 2925 6675
 Wire Wire Line
 	4525 1275 4525 850 
 Wire Wire Line
@@ -1536,7 +1529,7 @@ U 1 1 62B14365
 P 10800 4450
 F 0 "J209" V 10900 4525 50  0000 L CNN
 F 1 "Conn_01x15" V 10975 4400 50  0000 L CNN
-F 2 "" H 10800 4450 50  0001 C CNN
+F 2 "Connector_Hirose:Hirose_DF13-15P-1.25DSA_1x15_P1.25mm_Vertical" H 10800 4450 50  0001 C CNN
 F 3 "~" H 10800 4450 50  0001 C CNN
 	1    10800 4450
 	1    0    0    -1  
@@ -1557,7 +1550,7 @@ Text GLabel 5175 975  2    50   Input ~ 0
 Test_SW2
 Text GLabel 10600 4050 0    50   Input ~ 0
 Test_SW2
-Text GLabel 2025 3275 3    50   Input ~ 0
+Text GLabel 2025 3525 3    50   Input ~ 0
 Test_InhibV+
 Text GLabel 10600 4150 0    50   Input ~ 0
 Test_InhibV+
@@ -1589,8 +1582,6 @@ Text GLabel 10600 4750 0    50   Input ~ 0
 Test_INA+
 Text GLabel 10600 4850 0    50   Input ~ 0
 Test_INB-
-Text GLabel 3025 7225 0    50   Input ~ 0
-Test_Relay_Inhibs
 Text GLabel 10600 4950 0    50   Input ~ 0
 Test_Relay_Inhibs
 Text GLabel 8175 2350 0    50   Input ~ 0
@@ -1610,4 +1601,69 @@ Wire Wire Line
 	9025 4600 9200 4600
 Wire Wire Line
 	4500 4375 5025 4375
+$Comp
+L Device:R R106
+U 1 1 62B16433
+P 2975 6950
+F 0 "R106" V 2875 6850 50  0000 L CNN
+F 1 "1M" V 2800 6900 50  0000 L CNN
+F 2 "" V 2905 6950 50  0001 C CNN
+F 3 "~" H 2975 6950 50  0001 C CNN
+	1    2975 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 62B33151
+P 2975 7100
+F 0 "#PWR0122" H 2975 6850 50  0001 C CNN
+F 1 "GND" H 2875 7000 50  0000 C CNN
+F 2 "" H 2975 7100 50  0001 C CNN
+F 3 "" H 2975 7100 50  0001 C CNN
+	1    2975 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 6675 2975 6800
+Connection ~ 2975 6675
+Wire Wire Line
+	2975 6675 2925 6675
+Text GLabel 3000 7425 0    50   Input ~ 0
+Test_Relay_Inhibs
+Wire Wire Line
+	3050 6675 2975 6675
+Connection ~ 3050 6675
+Wire Wire Line
+	3100 6675 3050 6675
+Wire Wire Line
+	3050 7425 3000 7425
+Wire Wire Line
+	3050 6675 3050 7425
+Wire Wire Line
+	1850 2925 1850 3250
+Connection ~ 1850 2925
+Wire Wire Line
+	1850 2925 2025 2925
+$Comp
+L Device:R R109
+U 1 1 62BC56F8
+P 1850 3400
+F 0 "R109" V 1750 3300 50  0000 L CNN
+F 1 "1M" V 1675 3350 50  0000 L CNN
+F 2 "" V 1780 3400 50  0001 C CNN
+F 3 "~" H 1850 3400 50  0001 C CNN
+	1    1850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 62BC77F7
+P 1850 3550
+F 0 "#PWR0123" H 1850 3300 50  0001 C CNN
+F 1 "GND" H 1855 3377 50  0000 C CNN
+F 2 "" H 1850 3550 50  0001 C CNN
+F 3 "" H 1850 3550 50  0001 C CNN
+	1    1850 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
