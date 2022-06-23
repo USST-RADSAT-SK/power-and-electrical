@@ -17,8 +17,6 @@ Text Notes 10325 7350 0    50   ~ 0
 Riley Nemetz\nAtharva Kulkarni
 Text Notes 700  700  0    50   ~ 0
 Mechanical Switches and RBF Connection with 5vCharge
-Text GLabel 2525 6275 0    50   Input ~ 0
-Inhib_EN
 $Comp
 L power:+5V #PWR0105
 U 1 1 62B9ACB6
@@ -65,8 +63,6 @@ F 3 "~" H 7400 6125 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2825 6675 2925 6675
-Wire Wire Line
-	2525 6275 2550 6275
 $Comp
 L BAT54CDW:BAT54CDW D204
 U 3 1 61760717
@@ -90,12 +86,12 @@ F 3 "~" H 6075 6650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Transistor_FET:IRLML2060 Q101
+L Transistor_FET:IRLML2060 Q204
 U 1 1 6182F8CA
 P 6500 6650
-AR Path="/6182F8CA" Ref="Q101"  Part="1" 
+AR Path="/6182F8CA" Ref="Q204"  Part="1" 
 AR Path="/602E25D3/6182F8CA" Ref="Q206"  Part="1" 
-F 0 "Q101" H 6275 6550 50  0000 L CNN
+F 0 "Q204" H 6275 6550 50  0000 L CNN
 F 1 "IRLML2060" H 6175 6450 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6700 6575 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 6500 6650 50  0001 L CNN
@@ -204,12 +200,12 @@ F 3 "" H 3700 7275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRLML2060 Q102
+L Transistor_FET:IRLML2060 Q206
 U 1 1 6183DF2D
 P 3600 6675
-AR Path="/6183DF2D" Ref="Q102"  Part="1" 
+AR Path="/6183DF2D" Ref="Q206"  Part="1" 
 AR Path="/602E25D3/6183DF2D" Ref="Q204"  Part="1" 
-F 0 "Q102" H 3375 6575 50  0000 L CNN
+F 0 "Q206" H 3375 6575 50  0000 L CNN
 F 1 "IRLML2060" H 3275 6475 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 3800 6600 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 3600 6675 50  0001 L CNN
@@ -256,12 +252,12 @@ F 3 "" H 5150 7275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRLML2060 Q103
+L Transistor_FET:IRLML2060 Q205
 U 1 1 6181C5B5
 P 5050 6675
-AR Path="/6181C5B5" Ref="Q103"  Part="1" 
+AR Path="/6181C5B5" Ref="Q205"  Part="1" 
 AR Path="/602E25D3/6181C5B5" Ref="Q205"  Part="1" 
-F 0 "Q103" H 4825 6575 50  0000 L CNN
+F 0 "Q205" H 4825 6575 50  0000 L CNN
 F 1 "IRLML2060" H 4725 6475 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 5250 6600 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" H 5050 6675 50  0001 L CNN
@@ -461,8 +457,6 @@ F 3 "" H 2300 3825 50  0001 C CNN
 	1    2300 3825
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4425 1275 4525 1275
 Connection ~ 4425 1275
 Wire Wire Line
 	4425 1275 4425 1500
@@ -475,8 +469,8 @@ $Comp
 L Device:Battery_Cell BT201
 U 1 1 600C995D
 P 2700 1575
-F 0 "BT201" H 2818 1671 50  0000 L CNN
-F 1 "Battery_Cell" H 2818 1580 50  0000 L CNN
+F 0 "BT201" H 2400 1700 50  0000 L CNN
+F 1 "Battery_Cell" H 2125 1625 50  0000 L CNN
 F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 2700 1635 50  0001 C CNN
 F 3 "~" V 2700 1635 50  0001 C CNN
 	1    2700 1575
@@ -511,8 +505,6 @@ F 3 "~" H 2575 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2775 2250 2775 2525
-Wire Wire Line
-	2775 2525 2925 2525
 Connection ~ 2775 2525
 Wire Wire Line
 	2775 2525 2775 2750
@@ -531,8 +523,6 @@ Text GLabel 1300 1500 2    50   Input ~ 0
 USB_Charge
 Wire Wire Line
 	5025 1000 5025 1275
-Wire Wire Line
-	5025 1275 5175 1275
 Connection ~ 5025 1275
 Wire Wire Line
 	5025 1275 5025 1500
@@ -650,10 +640,6 @@ NoConn ~ 8850 3000
 NoConn ~ 8350 3000
 NoConn ~ 8350 3100
 NoConn ~ 8850 3100
-Wire Wire Line
-	8000 2600 8175 2600
-Wire Wire Line
-	8000 2700 8175 2700
 NoConn ~ 6375 2725
 NoConn ~ 6375 2625
 $Comp
@@ -674,8 +660,6 @@ NoConn ~ 8850 1900
 NoConn ~ 8850 1800
 Text GLabel 9025 2100 2    50   Input ~ 0
 USB_Charge
-Wire Wire Line
-	9025 2100 8950 2100
 $Comp
 L power:+5V #PWR0102
 U 1 1 62B5D070
@@ -732,10 +716,6 @@ Wire Wire Line
 	6200 1825 6375 1825
 Wire Wire Line
 	6375 1925 6000 1925
-Wire Wire Line
-	6875 1825 6975 1825
-Wire Wire Line
-	6875 1925 7125 1925
 $Comp
 L power:GND #PWR0108
 U 1 1 62B5D08C
@@ -859,8 +839,8 @@ $Comp
 L Device:Battery_Cell BT202
 U 1 1 62B699F6
 P 3050 1575
-F 0 "BT202" H 3168 1671 50  0000 L CNN
-F 1 "Battery_Cell" H 3168 1580 50  0000 L CNN
+F 0 "BT202" H 3025 1825 50  0000 L CNN
+F 1 "Battery_Cell" H 2900 1550 50  0000 L CNN
 F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 3050 1635 50  0001 C CNN
 F 3 "~" V 3050 1635 50  0001 C CNN
 	1    3050 1575
@@ -988,7 +968,7 @@ Wire Wire Line
 Wire Wire Line
 	1425 2725 1425 2925
 Wire Wire Line
-	1275 1600 1275 2725
+	1275 1600 1275 2175
 Wire Wire Line
 	1625 2925 1625 1975
 Wire Wire Line
@@ -1049,7 +1029,7 @@ Wire Wire Line
 Connection ~ 7625 3500
 Connection ~ 7350 3500
 Wire Wire Line
-	7625 3500 8975 3500
+	7625 3500 7775 3500
 Wire Wire Line
 	7350 3500 7625 3500
 Connection ~ 8975 4600
@@ -1089,8 +1069,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 4825 6650 4900
 Connection ~ 6650 4825
-Wire Wire Line
-	7050 4600 7175 4600
 Wire Wire Line
 	7050 4825 7050 4600
 Wire Wire Line
@@ -1227,7 +1205,7 @@ Wire Notes Line
 	2900 4000 2900 4050
 Wire Notes Line
 	450  4075 2500 4075
-Text Notes 5100 4750 0    50   ~ 0
+Text Notes 4925 4850 0    50   ~ 0
 Battery Charging\n
 $Comp
 L Device:Battery_Cell BT203
@@ -1258,155 +1236,11 @@ Connection ~ 2375 2525
 Wire Wire Line
 	2375 2525 2375 2750
 Wire Wire Line
-	2025 2925 2025 3525
-Wire Wire Line
 	1725 2925 1850 2925
-Connection ~ 2025 2925
-Wire Wire Line
-	2025 2925 2300 2925
-Wire Wire Line
-	3625 5525 3625 5300
-Wire Wire Line
-	3625 5300 3650 5300
-Wire Wire Line
-	9025 4925 9000 4925
 Wire Notes Line
 	9800 3425 9800 5450
 Wire Notes Line
 	7950 5425 11225 5425
-Wire Wire Line
-	4525 1275 4525 850 
-Wire Wire Line
-	4525 850  4550 850 
-Connection ~ 4525 1275
-Wire Wire Line
-	4525 1275 4625 1275
-Wire Wire Line
-	5175 1275 5175 975 
-Connection ~ 5175 1275
-Wire Wire Line
-	5175 1275 5500 1275
-Wire Wire Line
-	2925 2525 2925 2250
-Connection ~ 2925 2525
-Wire Wire Line
-	2925 2525 2975 2525
-Wire Wire Line
-	3050 1900 3275 1900
-Connection ~ 3050 1900
-Wire Wire Line
-	6975 1825 6975 1525
-Connection ~ 6975 1825
-Wire Wire Line
-	6975 1825 7025 1825
-Wire Wire Line
-	7125 1925 7125 1975
-Wire Wire Line
-	7125 1975 7425 1975
-Connection ~ 7125 1925
-Wire Wire Line
-	7125 1925 7200 1925
-Wire Wire Line
-	8950 2100 8950 1925
-Connection ~ 8950 2100
-Wire Wire Line
-	8950 2100 8850 2100
-Wire Wire Line
-	8175 2600 8175 2350
-Connection ~ 8175 2600
-Wire Wire Line
-	8175 2600 8350 2600
-Wire Wire Line
-	8175 2700 8175 2900
-Connection ~ 8175 2700
-Wire Wire Line
-	8175 2700 8350 2700
-Wire Wire Line
-	7175 4400 7175 4125
-Wire Wire Line
-	6650 4400 7175 4400
-Connection ~ 7175 4400
-Wire Wire Line
-	7175 4400 7350 4400
-Wire Wire Line
-	7175 4600 7175 4800
-Connection ~ 7175 4600
-Wire Wire Line
-	7175 4600 7350 4600
-$Comp
-L Connector_Generic:Conn_01x15 J209
-U 1 1 62B14365
-P 10800 4450
-F 0 "J209" V 10900 4525 50  0000 L CNN
-F 1 "Conn_01x15" V 10975 4400 50  0000 L CNN
-F 2 "Connector_Hirose:Hirose_DF13-15P-1.25DSA_1x15_P1.25mm_Vertical" H 10800 4450 50  0001 C CNN
-F 3 "~" H 10800 4450 50  0001 C CNN
-	1    10800 4450
-	1    0    0    -1  
-$EndComp
-Text GLabel 3275 1900 2    50   Input ~ 0
-Test_negetive_Batt
-Text GLabel 10600 3750 0    50   Input ~ 0
-Test_negetive_Batt
-Text GLabel 2925 2250 2    50   Input ~ 0
-Test_GND
-Text GLabel 10600 3850 0    50   Input ~ 0
-Test_GND
-Text GLabel 4550 850  1    50   Input ~ 0
-Test_SW1
-Text GLabel 10600 3950 0    50   Input ~ 0
-Test_SW1
-Text GLabel 5175 975  2    50   Input ~ 0
-Test_SW2
-Text GLabel 10600 4050 0    50   Input ~ 0
-Test_SW2
-Text GLabel 2025 3525 3    50   Input ~ 0
-Test_InhibV+
-Text GLabel 10600 4150 0    50   Input ~ 0
-Test_InhibV+
-Text GLabel 7425 1975 2    50   Input ~ 0
-Test_CSKB_3V3
-Text GLabel 6975 1525 2    50   Input ~ 0
-Test_CSKB_5V
-Text GLabel 10600 4250 0    50   Input ~ 0
-Test_CSKB_3V3
-Text GLabel 10600 4350 0    50   Input ~ 0
-Test_CSKB_5V
-Text GLabel 9000 4925 2    50   Input ~ 0
-Test_CHRG_ON-OFF
-Text GLabel 10600 4450 0    50   Input ~ 0
-Test_CHRG_ON-OFF
-Text GLabel 8950 1925 2    50   Input ~ 0
-Test_USB_Charge
-Text GLabel 10600 4550 0    50   Input ~ 0
-Test_USB_Charge
-Text GLabel 10600 4650 0    50   Input ~ 0
-Test_Vreg
-Text GLabel 7175 4125 1    50   Input ~ 0
-Test_INA+
-Text GLabel 7175 4800 3    50   Input ~ 0
-Test_INB-
-Text GLabel 10600 4750 0    50   Input ~ 0
-Test_INA+
-Text GLabel 10600 4850 0    50   Input ~ 0
-Test_INB-
-Text GLabel 10600 4950 0    50   Input ~ 0
-Test_Relay_Inhibs
-Text GLabel 8175 2350 0    50   Input ~ 0
-Test_I2C_DATA
-Text GLabel 8175 2900 0    50   Input ~ 0
-Test_I2C_CLK
-Text GLabel 10600 5050 0    50   Input ~ 0
-Test_I2C_DATA
-Text GLabel 10600 5150 0    50   Input ~ 0
-Test_I2C_CLK
-Wire Wire Line
-	8975 4600 9025 4600
-Wire Wire Line
-	9025 4600 9025 4925
-Connection ~ 9025 4600
-Wire Wire Line
-	9025 4600 9200 4600
 $Comp
 L Device:R R106
 U 1 1 62B16433
@@ -1434,22 +1268,9 @@ Wire Wire Line
 Connection ~ 2975 6675
 Wire Wire Line
 	2975 6675 2925 6675
-Text GLabel 3000 7425 0    50   Input ~ 0
-Test_Relay_Inhibs
-Wire Wire Line
-	3050 6675 2975 6675
-Connection ~ 3050 6675
-Wire Wire Line
-	3100 6675 3050 6675
-Wire Wire Line
-	3050 7425 3000 7425
-Wire Wire Line
-	3050 6675 3050 7425
 Wire Wire Line
 	1850 2925 1850 3250
 Connection ~ 1850 2925
-Wire Wire Line
-	1850 2925 2025 2925
 $Comp
 L Device:R R109
 U 1 1 62BC56F8
@@ -1514,8 +1335,6 @@ F 3 "" H 5000 4675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 4975 4375 4975
-Wire Wire Line
 	1450 4675 975  4675
 Connection ~ 975  4675
 Wire Wire Line
@@ -1525,7 +1344,7 @@ L Device:R R103
 U 1 1 62C899A2
 P 975 4950
 F 0 "R103" H 1045 4996 50  0000 L CNN
-F 1 "R" H 1045 4905 50  0000 L CNN
+F 1 "1k" H 1045 4905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 905 4950 50  0001 C CNN
 F 3 "~" H 975 4950 50  0001 C CNN
 	1    975  4950
@@ -1538,7 +1357,7 @@ L Device:R R104
 U 1 1 62C92DBD
 P 975 5325
 F 0 "R104" H 1045 5371 50  0000 L CNN
-F 1 "R" H 1045 5280 50  0000 L CNN
+F 1 "2k" H 1045 5280 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 905 5325 50  0001 C CNN
 F 3 "~" H 975 5325 50  0001 C CNN
 	1    975  5325
@@ -1582,20 +1401,7 @@ $EndComp
 Wire Wire Line
 	575  4675 575  5525
 Wire Wire Line
-	575  5525 3625 5525
-Wire Wire Line
 	575  4675 750  4675
-$Comp
-L Device:C C103
-U 1 1 62D24479
-P 750 4825
-F 0 "C103" H 865 4871 50  0000 L CNN
-F 1 "C" H 865 4780 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 788 4675 50  0001 C CNN
-F 3 "~" H 750 4825 50  0001 C CNN
-	1    750  4825
-	1    0    0    -1  
-$EndComp
 Connection ~ 750  4675
 Wire Wire Line
 	750  4675 975  4675
@@ -1612,9 +1418,6 @@ F 3 "" H 750 4975 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5375 5525 5600 5525
-Connection ~ 3625 5525
-Wire Wire Line
-	3625 5525 5075 5525
 Wire Wire Line
 	1450 4775 1125 4775
 Wire Wire Line
@@ -1638,8 +1441,6 @@ F 3 "" H 4250 4775 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 4675 4700 4675
-Text GLabel 3650 5300 2    50   Input ~ 0
-Test_Vreg
 $Comp
 L Device:D_Schottky D?
 U 1 1 62C794F0
@@ -1685,7 +1486,7 @@ U 1 1 62C0C9E2
 P 5600 5075
 AR Path="/62B9869E/62C0C9E2" Ref="R?"  Part="1" 
 AR Path="/62C0C9E2" Ref="R107"  Part="1" 
-F 0 "R107" H 5775 5025 50  0000 R CNN
+F 0 "R107" H 5850 5025 50  0000 R CNN
 F 1 "81" H 5775 5125 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5530 5075 50  0001 C CNN
 F 3 "~" H 5600 5075 50  0001 C CNN
@@ -1694,8 +1495,6 @@ F 3 "~" H 5600 5075 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5600 5225 5600 5525
-Wire Wire Line
-	5600 4925 5900 4925
 $Comp
 L power:GND #PWR?
 U 1 1 62C2C428
@@ -1708,5 +1507,330 @@ F 2 "" H 6050 5525 50  0001 C CNN
 F 3 "" H 6050 5525 50  0001 C CNN
 	1    6050 5525
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2775 2525 2875 2525
+Wire Wire Line
+	6875 1825 6950 1825
+Wire Wire Line
+	6875 1925 7100 1925
+Wire Wire Line
+	8000 2600 8125 2600
+Wire Wire Line
+	8000 2700 8125 2700
+Wire Wire Line
+	8850 2100 8950 2100
+Wire Wire Line
+	575  5525 5075 5525
+Wire Wire Line
+	8975 4600 9200 4600
+Wire Wire Line
+	2975 6675 3050 6675
+Wire Wire Line
+	1850 2925 2200 2925
+Wire Wire Line
+	5025 1275 5250 1275
+Wire Wire Line
+	2525 6275 2550 6275
+Text GLabel 2525 6275 0    50   Input ~ 0
+Inhib_EN
+$Comp
+L Device:C C103
+U 1 1 62D24479
+P 750 4825
+F 0 "C103" V 875 4725 50  0000 L CNN
+F 1 "10uF" V 625 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 788 4675 50  0001 C CNN
+F 3 "~" H 750 4825 50  0001 C CNN
+	1    750  4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP115
+U 1 1 62B53CB5
+P 4325 5075
+F 0 "TP115" H 4267 5101 50  0000 R CNN
+F 1 "TestPoint" H 4267 5192 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 4525 5075 50  0001 C CNN
+F 3 "~" H 4525 5075 50  0001 C CNN
+	1    4325 5075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 4975 4325 4975
+Wire Wire Line
+	4325 4975 4325 5075
+Connection ~ 4325 4975
+Wire Wire Line
+	4325 4975 4375 4975
+$Comp
+L Connector:TestPoint TP111
+U 1 1 62B72E15
+P 7775 3250
+F 0 "TP111" H 7717 3276 50  0000 R CNN
+F 1 "TestPoint" H 7717 3367 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 7975 3250 50  0001 C CNN
+F 3 "~" H 7975 3250 50  0001 C CNN
+	1    7775 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 3500 7775 3250
+Connection ~ 7775 3500
+Wire Wire Line
+	7775 3500 8975 3500
+$Comp
+L Connector:TestPoint TP113
+U 1 1 62B817BE
+P 5975 4750
+F 0 "TP113" H 5900 4875 50  0000 R CNN
+F 1 "TestPoint" H 6050 4975 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 6175 4750 50  0001 C CNN
+F 3 "~" H 6175 4750 50  0001 C CNN
+	1    5975 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4925 5750 4750
+Wire Wire Line
+	5600 4925 5750 4925
+Connection ~ 5750 4925
+Wire Wire Line
+	5750 4925 5900 4925
+Wire Wire Line
+	5750 4750 5975 4750
+$Comp
+L Connector:TestPoint TP103
+U 1 1 62B9F1AA
+P 4525 1575
+F 0 "TP103" H 4467 1601 50  0000 R CNN
+F 1 "TestPoint" H 4467 1692 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 4725 1575 50  0001 C CNN
+F 3 "~" H 4725 1575 50  0001 C CNN
+	1    4525 1575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP101
+U 1 1 62BA6CF1
+P 5425 1050
+F 0 "TP101" H 5367 1076 50  0000 R CNN
+F 1 "TestPoint" H 5367 1167 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 5625 1050 50  0001 C CNN
+F 3 "~" H 5625 1050 50  0001 C CNN
+	1    5425 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 1275 4525 1275
+Wire Wire Line
+	4525 1575 4525 1275
+Connection ~ 4525 1275
+Wire Wire Line
+	4525 1275 4625 1275
+Wire Wire Line
+	5425 1050 5425 1125
+Wire Wire Line
+	5425 1125 5250 1125
+Wire Wire Line
+	5250 1125 5250 1275
+Connection ~ 5250 1275
+Wire Wire Line
+	5250 1275 5500 1275
+$Comp
+L Connector:TestPoint TP107
+U 1 1 62BC6559
+P 3225 2275
+F 0 "TP107" H 3167 2301 50  0000 R CNN
+F 1 "TestPoint" H 3167 2392 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 3425 2275 50  0001 C CNN
+F 3 "~" H 3425 2275 50  0001 C CNN
+	1    3225 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 2275 3225 2350
+Wire Wire Line
+	3225 2350 2875 2350
+Wire Wire Line
+	2875 2350 2875 2525
+Connection ~ 2875 2525
+Wire Wire Line
+	2875 2525 2975 2525
+$Comp
+L Connector:TestPoint TP109
+U 1 1 62BDEB61
+P 2200 2775
+F 0 "TP109" H 2142 2801 50  0000 R CNN
+F 1 "TestPoint" H 2142 2892 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 2400 2775 50  0001 C CNN
+F 3 "~" H 2400 2775 50  0001 C CNN
+	1    2200 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2775 2200 2925
+Connection ~ 2200 2925
+Wire Wire Line
+	2200 2925 2300 2925
+$Comp
+L Connector:TestPoint TP112
+U 1 1 62BF0584
+P 7175 4000
+F 0 "TP112" H 7117 4026 50  0000 R CNN
+F 1 "TestPoint" H 7117 4117 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 7375 4000 50  0001 C CNN
+F 3 "~" H 7375 4000 50  0001 C CNN
+	1    7175 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7175 4000 7175 4400
+Connection ~ 7175 4400
+Wire Wire Line
+	7175 4400 7350 4400
+Wire Wire Line
+	6650 4400 7175 4400
+$Comp
+L Connector:TestPoint TP114
+U 1 1 62C095CB
+P 7200 4850
+F 0 "TP114" H 7142 4876 50  0000 R CNN
+F 1 "TestPoint" H 7142 4967 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 7400 4850 50  0001 C CNN
+F 3 "~" H 7400 4850 50  0001 C CNN
+	1    7200 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 4850 7200 4600
+Wire Wire Line
+	7050 4600 7200 4600
+Connection ~ 7200 4600
+Wire Wire Line
+	7200 4600 7350 4600
+Wire Wire Line
+	3050 6450 3350 6450
+Wire Wire Line
+	3350 6450 3350 6225
+Wire Wire Line
+	3050 6450 3050 6675
+Connection ~ 3050 6675
+Wire Wire Line
+	3050 6675 3100 6675
+$Comp
+L Connector:TestPoint TP116
+U 1 1 62C247A6
+P 3350 6225
+F 0 "TP116" H 3625 6375 50  0000 R CNN
+F 1 "TestPoint" H 3525 6450 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 3550 6225 50  0001 C CNN
+F 3 "~" H 3550 6225 50  0001 C CNN
+	1    3350 6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP106
+U 1 1 62C2D648
+P 1000 2175
+F 0 "TP106" H 942 2201 50  0000 R CNN
+F 1 "TestPoint" H 942 2292 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 1200 2175 50  0001 C CNN
+F 3 "~" H 1200 2175 50  0001 C CNN
+	1    1000 2175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1000 2175 1275 2175
+Connection ~ 1275 2175
+Wire Wire Line
+	1275 2175 1275 2725
+Wire Wire Line
+	6950 1825 6950 1450
+Wire Wire Line
+	6950 1450 7150 1450
+Connection ~ 6950 1825
+Wire Wire Line
+	6950 1825 7025 1825
+$Comp
+L Connector:TestPoint TP102
+U 1 1 62C49D73
+P 7150 1450
+F 0 "TP102" H 7350 1575 50  0000 R CNN
+F 1 "TestPoint" H 7250 1675 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 7350 1450 50  0001 C CNN
+F 3 "~" H 7350 1450 50  0001 C CNN
+	1    7150 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1925 7100 1975
+Wire Wire Line
+	7100 1975 7575 1975
+Wire Wire Line
+	7575 1975 7575 1950
+Connection ~ 7100 1925
+Wire Wire Line
+	7100 1925 7200 1925
+$Comp
+L Connector:TestPoint TP105
+U 1 1 62C681B2
+P 7575 1950
+F 0 "TP105" H 7875 2075 50  0000 R CNN
+F 1 "TestPoint" H 7750 2175 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 7775 1950 50  0001 C CNN
+F 3 "~" H 7775 1950 50  0001 C CNN
+	1    7575 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8125 2600 8125 2450
+Connection ~ 8125 2600
+Wire Wire Line
+	8125 2600 8350 2600
+$Comp
+L Connector:TestPoint TP108
+U 1 1 62C910E8
+P 8125 2450
+F 0 "TP108" H 8067 2476 50  0000 R CNN
+F 1 "TestPoint" H 8067 2567 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 8325 2450 50  0001 C CNN
+F 3 "~" H 8325 2450 50  0001 C CNN
+	1    8125 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8125 2700 8125 2825
+Connection ~ 8125 2700
+Wire Wire Line
+	8125 2700 8350 2700
+$Comp
+L Connector:TestPoint TP110
+U 1 1 62CA5ED4
+P 8125 2825
+F 0 "TP110" H 8425 2925 50  0000 R CNN
+F 1 "TestPoint" H 8500 2850 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 8325 2825 50  0001 C CNN
+F 3 "~" H 8325 2825 50  0001 C CNN
+	1    8125 2825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8950 2100 8950 1825
+Wire Wire Line
+	8950 1825 9250 1825
+Connection ~ 8950 2100
+Wire Wire Line
+	8950 2100 9025 2100
+$Comp
+L Connector:TestPoint TP104
+U 1 1 62CBAF96
+P 9250 1825
+F 0 "TP104" H 9550 1950 50  0000 R CNN
+F 1 "TestPoint" H 9450 2050 50  0000 R CNN
+F 2 "S2761-46R:HARWIN_S2761-46R" H 9450 1825 50  0001 C CNN
+F 3 "~" H 9450 1825 50  0001 C CNN
+	1    9250 1825
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
