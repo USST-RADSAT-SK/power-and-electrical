@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 10325 7350 0    50   ~ 0
-Riley Nemetz\nAtharva Kulkarni
 Text Notes 700  700  0    50   ~ 0
 Mechanical Switches and RBF Connection with 5vCharge
 $Comp
@@ -405,7 +403,7 @@ F 3 "~" H 4225 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 8125 7650 0    50   ~ 0
-October 25 2021
+June 12 2022
 $Comp
 L BAT54CDW:BAT54CDW D204
 U 4 1 617DE62D
@@ -765,58 +763,58 @@ Wire Notes Line
 $Comp
 L Mechanical:MountingHole H101
 U 1 1 62BD786D
-P 8425 5700
+P 8805 5850
 AR Path="/62BD786D" Ref="H101"  Part="1" 
 AR Path="/602E25D3/62BD786D" Ref="H101"  Part="1" 
-F 0 "H101" H 8525 5746 50  0000 L CNN
-F 1 "MountingHole" H 8525 5655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 8425 5700 50  0001 C CNN
-F 3 "~" H 8425 5700 50  0001 C CNN
-	1    8425 5700
+F 0 "H101" H 8905 5896 50  0000 L CNN
+F 1 "MountingHole" H 8905 5805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 8805 5850 50  0001 C CNN
+F 3 "~" H 8805 5850 50  0001 C CNN
+	1    8805 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H103
 U 1 1 62BD7873
-P 8425 5950
+P 8805 6100
 AR Path="/62BD7873" Ref="H103"  Part="1" 
 AR Path="/602E25D3/62BD7873" Ref="H102"  Part="1" 
-F 0 "H103" H 8525 5996 50  0000 L CNN
-F 1 "MountingHole" H 8525 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 8425 5950 50  0001 C CNN
-F 3 "~" H 8425 5950 50  0001 C CNN
-	1    8425 5950
+F 0 "H103" H 8905 6146 50  0000 L CNN
+F 1 "MountingHole" H 8905 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 8805 6100 50  0001 C CNN
+F 3 "~" H 8805 6100 50  0001 C CNN
+	1    8805 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H104
 U 1 1 62BD7879
-P 9225 5950
+P 9605 6100
 AR Path="/62BD7879" Ref="H104"  Part="1" 
 AR Path="/602E25D3/62BD7879" Ref="H104"  Part="1" 
-F 0 "H104" H 9325 5996 50  0000 L CNN
-F 1 "MountingHole" H 9325 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 9225 5950 50  0001 C CNN
-F 3 "~" H 9225 5950 50  0001 C CNN
-	1    9225 5950
+F 0 "H104" H 9705 6146 50  0000 L CNN
+F 1 "MountingHole" H 9705 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 9605 6100 50  0001 C CNN
+F 3 "~" H 9605 6100 50  0001 C CNN
+	1    9605 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H102
 U 1 1 62BD787F
-P 9225 5700
+P 9605 5850
 AR Path="/62BD787F" Ref="H102"  Part="1" 
 AR Path="/602E25D3/62BD787F" Ref="H103"  Part="1" 
-F 0 "H102" H 9325 5746 50  0000 L CNN
-F 1 "MountingHole" H 9325 5655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 9225 5700 50  0001 C CNN
-F 3 "~" H 9225 5700 50  0001 C CNN
-	1    9225 5700
+F 0 "H102" H 9705 5896 50  0000 L CNN
+F 1 "MountingHole" H 9705 5805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad_TopBottom" H 9605 5850 50  0001 C CNN
+F 3 "~" H 9605 5850 50  0001 C CNN
+	1    9605 5850
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	7950 5425 7950 6525
-Text Notes 8075 5550 0    50   ~ 0
+Text Notes 8135 5650 0    50   ~ 0
 Mounting Holes\n
 Wire Wire Line
 	800  1800 1525 1800
@@ -1237,10 +1235,6 @@ Wire Wire Line
 	2375 2525 2375 2750
 Wire Wire Line
 	1725 2925 1850 2925
-Wire Notes Line
-	9800 3425 9800 5450
-Wire Notes Line
-	7950 5425 11225 5425
 $Comp
 L Device:R R106
 U 1 1 62B16433
@@ -1313,7 +1307,7 @@ P 1450 4675
 AR Path="/62B436F2/62B5231F" Ref="U?"  Part="1" 
 AR Path="/62B5231F" Ref="U101"  Part="1" 
 F 0 "U101" H 2850 5040 50  0000 C CNN
-F 1 "LT1521IS8-5TR" H 2850 4949 50  0000 C CNN
+F 1 "LT1521" H 2850 4949 50  0000 C CNN
 F 2 "LT1521IS8-5TR:SO-8_S" H 1450 4675 50  0001 L BNN
 F 3 "" H 1450 4675 50  0001 L BNN
 F 4 "lt1521is85#tr" H 1450 4675 50  0001 L BNN "MANUFACTURER_PART_NUMBER"
@@ -1343,8 +1337,8 @@ $Comp
 L Device:R R103
 U 1 1 62C899A2
 P 975 4950
-F 0 "R103" H 1045 4996 50  0000 L CNN
-F 1 "1k" H 1045 4905 50  0000 L CNN
+F 0 "R103" V 1065 4980 50  0000 L CNN
+F 1 "1k" V 1080 4865 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 905 4950 50  0001 C CNN
 F 3 "~" H 975 4950 50  0001 C CNN
 	1    975  4950
@@ -1381,7 +1375,7 @@ L power:GND #PWR0111
 U 1 1 62CA29DC
 P 1450 4875
 F 0 "#PWR0111" H 1450 4625 50  0001 C CNN
-F 1 "GND" V 1455 4747 50  0000 R CNN
+F 1 "GND" V 1405 4975 50  0000 R CNN
 F 2 "" H 1450 4875 50  0001 C CNN
 F 3 "" H 1450 4875 50  0001 C CNN
 	1    1450 4875
@@ -1756,8 +1750,8 @@ $Comp
 L Connector:TestPoint TP102
 U 1 1 62C49D73
 P 7150 1450
-F 0 "TP102" H 7350 1575 50  0000 R CNN
-F 1 "TestPoint" H 7250 1675 50  0000 R CNN
+F 0 "TP102" H 7425 1550 50  0000 R CNN
+F 1 "TestPoint" H 7325 1675 50  0000 R CNN
 F 2 "S2761-46R:HARWIN_S2761-46R" H 7350 1450 50  0001 C CNN
 F 3 "~" H 7350 1450 50  0001 C CNN
 	1    7150 1450
@@ -1833,4 +1827,90 @@ F 3 "~" H 9450 1825 50  0001 C CNN
 	1    9250 1825
 	1    0    0    -1  
 $EndComp
+Text Notes 10325 7350 0    50   ~ 0
+Atharva Kulkarni\nRiley Nemetz\n
+Wire Notes Line
+	9425 3400 9425 5425
+$Comp
+L Galaxia_Timer:Galaxia_Timer U102
+U 1 1 62C45797
+P 10400 4075
+F 0 "U102" H 10215 3935 50  0000 L CNN
+F 1 "Galaxia_Timer" H 10100 3825 50  0000 L CNN
+F 2 "Galaxia_Timer:Galaxia_Timer" H 10400 4070 50  0001 C CNN
+F 3 "" H 10400 4070 50  0001 C CNN
+	1    10400 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9905 3975 9905 3775
+$Comp
+L power:+BATT #PWR0129
+U 1 1 62C47EA6
+P 9905 3775
+F 0 "#PWR0129" H 9905 3625 50  0001 C CNN
+F 1 "+BATT" V 9825 3805 50  0000 C CNN
+F 2 "" H 9905 3775 50  0001 C CNN
+F 3 "" H 9905 3775 50  0001 C CNN
+	1    9905 3775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10760 3975 10760 3770
+$Comp
+L power:+5V #PWR0130
+U 1 1 62CA2DBB
+P 10760 3770
+AR Path="/62CA2DBB" Ref="#PWR0130"  Part="1" 
+AR Path="/602E25D3/62CA2DBB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0130" H 10760 3620 50  0001 C CNN
+F 1 "+5V" H 10810 3895 50  0000 C CNN
+F 2 "" H 10760 3770 50  0001 C CNN
+F 3 "" H 10760 3770 50  0001 C CNN
+	1    10760 3770
+	1    0    0    -1  
+$EndComp
+Text GLabel 10770 4690 3    50   Input ~ 0
+Inhib_EN
+Wire Wire Line
+	10770 4520 10770 4690
+Wire Wire Line
+	9905 4520 9905 4685
+$Comp
+L power:GND #PWR0131
+U 1 1 62D1A3FF
+P 9905 4685
+F 0 "#PWR0131" H 9905 4435 50  0001 C CNN
+F 1 "GND" H 9910 4512 50  0000 C CNN
+F 2 "" H 9905 4685 50  0001 C CNN
+F 3 "" H 9905 4685 50  0001 C CNN
+	1    9905 4685
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9980 3975
+NoConn ~ 10055 3975
+NoConn ~ 10130 3975
+NoConn ~ 10210 3975
+NoConn ~ 10280 3975
+NoConn ~ 10350 3975
+NoConn ~ 10435 3975
+NoConn ~ 10515 3975
+NoConn ~ 10590 3975
+NoConn ~ 10675 3975
+NoConn ~ 9995 4520
+NoConn ~ 10080 4520
+NoConn ~ 10155 4520
+NoConn ~ 10235 4520
+NoConn ~ 10320 4520
+NoConn ~ 10390 4520
+NoConn ~ 10460 4520
+NoConn ~ 10540 4520
+NoConn ~ 10615 4520
+NoConn ~ 10690 4520
+Text Notes 9540 3550 0    50   ~ 0
+Galaxia Timer\n
+Wire Notes Line
+	11220 5425 11220 5420
+Wire Notes Line
+	7950 5425 11220 5425
 $EndSCHEMATC
