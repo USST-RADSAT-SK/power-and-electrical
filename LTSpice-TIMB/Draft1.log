@@ -1,0 +1,4 @@
+Circuit: * C:\Users\gundo\Desktop\P&E\power-and-electrical\LTSpice-TIMB\Draft1.asc
+
+Fatal Error: Unknown subcircuit called in:
+   xu1 n001 n002 0 scr

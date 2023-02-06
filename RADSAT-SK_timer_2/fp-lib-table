@@ -9,4 +9,6 @@
   (lib (name CONN_ZX62WRD-B-5PC_HIR)(type KiCad)(uri ${KIPRJMOD}/USB-Hirose-ZX62WRD-B-5PC/CONN_ZX62WRD-B-5PC_HIR.pretty)(options "")(descr ""))
   (lib (name USSTlogo)(type KiCad)(uri ${KIPRJMOD}/USSTlogo.pretty)(options "")(descr ""))
   (lib (name Sumida_inductor)(type KiCad)(uri ${KIPRJMOD}/Sumida_inductor.pretty)(options "")(descr ""))
+  (lib (name S2761-46R)(type KiCad)(uri C:/RADSAT-SK/P&E/TMIB/S2761-46R)(options "")(descr ""))
+  (lib (name Galaxia_Timer)(type KiCad)(uri ${KIPRJMOD}/Galaxia_Timer.pretty)(options "")(descr ""))
 )

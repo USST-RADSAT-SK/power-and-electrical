@@ -1,4 +1,4 @@
-19227507232163321
+19426139298200903
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51582,6 +51582,13 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
+Galaxia_Timer
+Galaxia_Timer
+
+
+0
+24
+24
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -56237,6 +56244,13 @@ SOT95P280X145-5N
 0
 5
 5
+LT1521IS8-5TR
+SO-8_S
+
+
+0
+8
+8
 LTC3440
 SOP50P490X110-10N
 
@@ -76334,6 +76348,13 @@ rotary encoder
 0
 5
 4
+S2761-46R
+HARWIN_S2761-46R
+
+
+0
+1
+1
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf

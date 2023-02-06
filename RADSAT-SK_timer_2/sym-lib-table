@@ -6,4 +6,6 @@
   (lib (name TPS3700DDCR)(type Legacy)(uri ${KIPRJMOD}/TPS3700/TPS3700DDCR.lib)(options "")(descr ""))
   (lib (name CONN_ZX62WRD-B-5PC_HIR)(type Legacy)(uri ${KIPRJMOD}/USB-Hirose-ZX62WRD-B-5PC/CONN_ZX62WRD-B-5PC_HIR.lib)(options "")(descr ""))
   (lib (name BAT54CDW)(type Legacy)(uri ${KIPRJMOD}/BAT54CDW/BAT54CDW.lib)(options "")(descr ""))
+  (lib (name RADSAT-SK-Timer-rescue)(type Legacy)(uri "C:/RADSAT-SK/RADSAT-SK Timer - old/RADSAT-SK Timer/RADSAT-SK Timer-rescue.lib")(options "")(descr ""))
+  (lib (name Galaxia_Timer)(type Legacy)(uri ${KIPRJMOD}/Galaxia_Timer.lib)(options "")(descr ""))
 )
