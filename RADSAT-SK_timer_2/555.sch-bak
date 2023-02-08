@@ -1,0 +1,288 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:TLC555xD U201
+U 1 1 63E46864
+P 4950 3250
+F 0 "U201" H 4950 3831 50  0000 C CNN
+F 1 "TLC555xD" H 4950 3740 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5800 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tlc555.pdf" H 5800 2850 50  0001 C CNN
+	1    4950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2850 4650 2850
+Wire Wire Line
+	4650 2850 4650 2700
+$Comp
+L power:+BATT #PWR0129
+U 1 1 63E4783C
+P 4650 2400
+F 0 "#PWR0129" H 4650 2250 50  0001 C CNN
+F 1 "+BATT" H 4665 2573 50  0000 C CNN
+F 2 "" H 4650 2400 50  0001 C CNN
+F 3 "" H 4650 2400 50  0001 C CNN
+	1    4650 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 2850
+$Comp
+L openlst-hw:+5V #PWR0130
+U 1 1 63E4A0D9
+P 2850 2000
+F 0 "#PWR0130" H 2850 1850 50  0001 C CNN
+F 1 "+5V" H 2865 2173 50  0000 C CNN
+F 2 "" H 2850 2000 50  0001 C CNN
+F 3 "" H 2850 2000 50  0001 C CNN
+	1    2850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D201
+U 1 1 63E4A961
+P 2850 2500
+F 0 "D201" V 2896 2420 50  0000 R CNN
+F 1 "D" V 2805 2420 50  0000 R CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2850 2500 50  0001 C CNN
+F 3 "~" H 2850 2500 50  0001 C CNN
+	1    2850 2500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2850 2900 3    50   Input ~ 0
+Inhib_EN
+$Comp
+L openlst-hw:GND #PWR0131
+U 1 1 63E4FD23
+P 4950 3650
+F 0 "#PWR0131" H 4950 3400 50  0001 C CNN
+F 1 "GND" H 4955 3477 50  0000 C CNN
+F 2 "" H 4950 3650 50  0001 C CNN
+F 3 "" H 4950 3650 50  0001 C CNN
+	1    4950 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2000 2850 2350
+Wire Wire Line
+	2850 2650 2850 2700
+Connection ~ 2850 2850
+Wire Wire Line
+	2850 2850 2850 2900
+Wire Wire Line
+	2850 2850 3200 2850
+Wire Wire Line
+	4450 3450 4250 3450
+Wire Wire Line
+	4250 3450 4250 2850
+Connection ~ 4250 2850
+Wire Wire Line
+	4250 2850 4650 2850
+Wire Wire Line
+	3200 2850 3200 3450
+Connection ~ 3200 2850
+Wire Wire Line
+	3200 2850 3900 2850
+$Comp
+L Device:R R201
+U 1 1 63E551A5
+P 3200 3600
+F 0 "R201" H 3270 3646 50  0000 L CNN
+F 1 "10k" H 3270 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 3130 3600 50  0001 C CNN
+F 3 "~" H 3200 3600 50  0001 C CNN
+	1    3200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L openlst-hw:GND #PWR0132
+U 1 1 63E55A51
+P 3200 4300
+F 0 "#PWR0132" H 3200 4050 50  0001 C CNN
+F 1 "GND" H 3205 4127 50  0000 C CNN
+F 2 "" H 3200 4300 50  0001 C CNN
+F 3 "" H 3200 4300 50  0001 C CNN
+	1    3200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3750 3200 3950
+Wire Wire Line
+	3900 2850 3900 2150
+Wire Wire Line
+	3900 2150 5650 2150
+Wire Wire Line
+	5650 2150 5650 2350
+Connection ~ 3900 2850
+Wire Wire Line
+	3900 2850 4250 2850
+$Comp
+L Device:R R202
+U 1 1 63E5A316
+P 5650 2500
+F 0 "R202" H 5720 2546 50  0000 L CNN
+F 1 "3M" H 5720 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 5580 2500 50  0001 C CNN
+F 3 "~" H 5650 2500 50  0001 C CNN
+	1    5650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2650 5650 3250
+Wire Wire Line
+	5650 3250 5450 3250
+Wire Wire Line
+	5650 3250 5650 3450
+Wire Wire Line
+	5650 3450 5450 3450
+Connection ~ 5650 3250
+Wire Wire Line
+	5650 3450 5650 3800
+Connection ~ 5650 3450
+$Comp
+L Device:C C202
+U 1 1 63E5B811
+P 5650 3950
+F 0 "C202" H 5765 3996 50  0000 L CNN
+F 1 "600uF" H 5765 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5688 3800 50  0001 C CNN
+F 3 "~" H 5650 3950 50  0001 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L openlst-hw:GND #PWR0133
+U 1 1 63E5C793
+P 5650 4100
+F 0 "#PWR0133" H 5650 3850 50  0001 C CNN
+F 1 "GND" H 5655 3927 50  0000 C CNN
+F 2 "" H 5650 4100 50  0001 C CNN
+F 3 "" H 5650 4100 50  0001 C CNN
+	1    5650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3050 3950 3050
+Wire Wire Line
+	3950 3050 3950 3950
+Wire Wire Line
+	3950 3950 3200 3950
+Connection ~ 3200 3950
+Wire Wire Line
+	3200 3950 3200 4300
+Wire Wire Line
+	4450 3250 4350 3250
+Text Notes 1700 2550 0    50   ~ 0
+Reverse breakdown of more \nthan 5V to prevent \n+BATT shorting with 5V line\n
+$Comp
+L Transistor_FET:2N7000 Q201
+U 1 1 63E64281
+P 7050 3050
+F 0 "Q201" H 7254 3096 50  0000 L CNN
+F 1 "2N7000" H 7254 3005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7250 2975 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7050 3050 50  0001 L CNN
+	1    7050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R203
+U 1 1 63E67F78
+P 7150 2500
+F 0 "R203" V 6943 2500 50  0000 C CNN
+F 1 "1M" V 7034 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 7080 2500 50  0001 C CNN
+F 3 "~" H 7150 2500 50  0001 C CNN
+	1    7150 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 2700 3750 2700
+Connection ~ 2850 2700
+Wire Wire Line
+	2850 2700 2850 2850
+Wire Wire Line
+	3750 2700 3750 1900
+Wire Wire Line
+	7150 1900 7150 2350
+Wire Wire Line
+	3750 1900 7150 1900
+Connection ~ 3750 2700
+Wire Wire Line
+	3750 2700 4650 2700
+Wire Wire Line
+	5450 3050 6850 3050
+$Comp
+L openlst-hw:GND #PWR0135
+U 1 1 63E74470
+P 7150 3250
+F 0 "#PWR0135" H 7150 3000 50  0001 C CNN
+F 1 "GND" H 7155 3077 50  0000 C CNN
+F 2 "" H 7150 3250 50  0001 C CNN
+F 3 "" H 7150 3250 50  0001 C CNN
+	1    7150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2650 7150 2750
+Wire Wire Line
+	7150 2750 7800 2750
+Connection ~ 7150 2750
+Wire Wire Line
+	7150 2750 7150 2850
+Text GLabel 7800 2750 2    50   Input ~ 0
+Inhib_EN
+Text Notes 3300 3400 0    50   ~ 0
+10k Pull up\n
+Wire Wire Line
+	4350 3250 4350 4000
+$Comp
+L openlst-hw:GND #PWR0134
+U 1 1 63E61A30
+P 4350 4300
+F 0 "#PWR0134" H 4350 4050 50  0001 C CNN
+F 1 "GND" H 4355 4127 50  0000 C CNN
+F 2 "" H 4350 4300 50  0001 C CNN
+F 3 "" H 4350 4300 50  0001 C CNN
+	1    4350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C201
+U 1 1 63E61A2A
+P 4350 4150
+F 0 "C201" H 4465 4196 50  0000 L CNN
+F 1 "10nF" H 4465 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4388 4000 50  0001 C CNN
+F 3 "~" H 4350 4150 50  0001 C CNN
+	1    4350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D202
+U 1 1 6407EB13
+P 4650 2550
+F 0 "D202" V 4696 2470 50  0000 R CNN
+F 1 "D" V 4605 2470 50  0000 R CNN
+F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4650 2550 50  0001 C CNN
+F 3 "~" H 4650 2550 50  0001 C CNN
+	1    4650 2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4650 2700
+Text Notes 4850 2450 0    50   ~ 0
+Low voltage drop, more \nthan 5V reverse breakdown\n voltage\n
+$EndSCHEMATC

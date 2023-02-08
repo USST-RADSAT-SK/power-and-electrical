@@ -1,4 +1,18 @@
-19426139298200903
+19431346735555464
+254TR
+BAT_254TR
+
+
+0
+2
+2
+0433BM15A0001
+BALUM_FILTER(0805_SC70-6)
+
+
+0
+6
+6
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56244,13 +56258,13 @@ SOT95P280X145-5N
 0
 5
 5
-LT1521IS8-5TR
-SO-8_S
+LT1930ES5TRMPBF
+SOT-5_S
 
 
 0
-8
-8
+5
+5
 LTC3440
 SOP50P490X110-10N
 
@@ -76348,6 +76362,13 @@ rotary encoder
 0
 5
 4
+S-8209AAA-T8T1y
+SOP65P640X120-8N
+
+
+0
+8
+8
 S2761-46R
 HARWIN_S2761-46R
 
